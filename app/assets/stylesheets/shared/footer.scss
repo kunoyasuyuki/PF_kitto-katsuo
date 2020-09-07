@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+.footer{
+ width: 100vw;
+ padding: 2vh 15vw;
+ display: flex;
+ flex-direction: column;
+}
+
+.footer-contents{
+ display:flex;
+ justify-content: space-between;
+
+
+.footer-left{
+  text-align: left;
+  font: normal bold 40px/10px Proxima Nova;
+  letter-spacing: 0.5px;
+  color: #1C2126;
+  opacity: 1;
+}
+
+.fish{
+  width: 10vh;
+  background: #E58888 ;
+}
+
+
+.footer-center{
+font: bold 25px/30px Proxima Nova;
+text-align:center;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+}
+
+.footer-right{
+font: bold 25px/30px Proxima Nova;
+text-align:center;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+margin-right:100px;
+}
