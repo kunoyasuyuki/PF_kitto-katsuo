@@ -60,3 +60,9 @@ gem 'pry-rails'
 #deviseの導入
 gem 'devise'
 gem 'omniauth-twitter'
+
+#active_hashの導入
+gem 'active_hash'
+
+#ウィザード形式の入力のためのgem導入
+gem 'wicked'
