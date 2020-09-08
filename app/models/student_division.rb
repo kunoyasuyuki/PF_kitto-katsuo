@@ -1,4 +1,4 @@
-class StudenDivision < ActiveHash::Base
+class StudentDivision < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: '高校生' },
