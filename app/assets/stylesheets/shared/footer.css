@@ -12,7 +12,7 @@
 .footer-contents{
  display:flex;
  justify-content: space-between;
-
+}
 
 .footer-left{
   text-align: left;
