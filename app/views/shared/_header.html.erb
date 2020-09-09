@@ -6,16 +6,24 @@
 
   <div class='nav'>
    <ul class='lists-left'>
-    <li><%= link_to '出品する' , "#", class: "item-list"%></li>
-    <li><%= link_to 'メッセージ' , "#", class: "message-list"%></li>
+    <ul><%= link_to '出品する' , "#", class: "item-list"%></ul>
+    <ul><%= link_to 'メッセージ' , "#", class: "message-list"%></ul>
    </ul>
   
-
-   <ul class='lists-right'>  
-       <li><%= link_to 'ログイン',"#", class: "login"%></li>
-       <li><%= link_to '会員登録',"#", class: "sign-up"%></li>
-    </div>
-   </ul>
+   <div class='lists-right'>
+    <% if user_signed_in? %>
+       <div class="user_nav_grid-5">
+         <%= link_to {current_user.nickname}%>
+         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+       </div>
+    <% else %>
+       <div class="grid-5">
+         <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+         <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+       </div>
+    <% end %>
+   </div> 
   </div> 
+
 </header>
 

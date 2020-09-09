@@ -14,7 +14,37 @@
   cursor: pointer;
 }
 
+
+.select-box {
+  height: 45px;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+
+
+.back-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.back-gray-btn {
+  width: 100%;
+  background: #9EA0A3;
+  border: 1px solid #9EA0A3;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .login-flash-message {
   text-align: center;
+  color: red;
+}
+
+.indispensable {
   color: red;
 }

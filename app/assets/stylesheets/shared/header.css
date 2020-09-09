@@ -9,7 +9,6 @@
  flex-direction: column;
 }
 
-
 .top-bar-contents {
   display: flex;
   justify-content: flex-start;
@@ -68,26 +67,14 @@
   align-items: flex-end;
 }
 
-.login {
-  text-decoration: none;
-  line-height: 32px;
-  margin-right: 3vw;
-  color: #333333;
-  }
-
-.sign-up {
-  text-decoration: none;
-  margin-right: 3vw;
-  font-weight: bold;
-  color: #333333;
-}
-
 .lists-right {
   display: flex;
   justify-content: space-between;
   min-width: 200px;
 }
 
+
+
 .login {
   margin-right: 3vw;
   font-weight: bold;
@@ -98,4 +85,3 @@
   margin-right: 3vw;
   font-weight: bold;
   color: #333333;
-}
