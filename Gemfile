@@ -61,8 +61,14 @@ gem 'pry-rails'
 gem 'devise'
 gem 'omniauth-twitter'
 
+
 #active_hashの導入
 gem 'active_hash'
 
 #ウィザード形式の入力のためのgem導入
 gem 'wicked'
+
+#pay.jp
+gem 'payjp'
+
+gem 'gon'
