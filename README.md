@@ -14,7 +14,7 @@
 | student_division_id | integer | null: false |
 
 ### Association
-- has_many :tikets 
+- has_many :tickets 
 - has_many :entries
 - has_many :orders
 - has_many :messages
@@ -29,7 +29,7 @@
 | user                | references | null: false , foreign_key: true|
 
 ### Association
-- belongs_to :tiket
+- belongs_to :ticket
 
 ## TIKETS テーブル
 | Column                     | Type   | Options     |
