@@ -1,24 +1,96 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## USERS テーブル
+| Column              | Type    | Options     |
+| --------------------| --------| ----------- |
+| nickname            | string  | null: false |
+| email               | string  | null: false ,unique: true |
+| password            | string  | null: false |
+| family_name         | string  | null: false |
+| last_name           | string  | null: false |
+| family_name_kana    | string  | null: false |
+| last_name_kana      | string  | null: false |
+| birth_day           | date    | null: false |
+| student_division_id | integer | null: false |
 
-Things you may want to cover:
+### Association
+- has_many :tickets 
+- has_many :entries
+- has_many :orders
+- has_many :messages
+- has_one  :credit
 
-* Ruby version
+## CREDIT テーブル
+| Column              | Type    | Options     |
+| --------------------| ------  | ----------- |
+| card-number         | string  | null: false |
+| expiration-date     | integer | null: false ,unique: true |
+| security-code       | integer | null: false |
+| user                | references | null: false , foreign_key: true|
 
-* System dependencies
+### Association
+- belongs_to :ticket
 
-* Configuration
+## TIKETS テーブル
+| Column                     | Type   | Options     |
+| ---------------------------| ------ | ----------- |
+| name                       | string | null: false |
+| image                      | string | null: false |
+| introduction               | text   | null: false |
+| user                       | references | null: false , foreign_key: true|
+| category_id                | references | null: false , foreign_key: true|
 
-* Database creation
+### Association
+- belongs_to :user
+- has_many :entries
+- has_many :orders
+- has_one:category
 
-* Database initialization
+## Orders テーブル
+| ---------------------------| -----------| -------------------------------|
+| price                      | integer    | null: false                    |
+| user   　 　                | references | null: false ,foreign_key: true |
+| tiket   　　                | references | null: false ,foreign_key: true |
 
-* How to run the test suite
+### Association
+- belongs_to :tiket
+- belongs_to :user
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## CATEGORY テーブル
+| ---------------------------| ------  | ----------- |
+| name                       | string  | null: false |
 
-* ...
+### Association
+- belongs_to :tiket
+
+### Entriesテーブル
+| ---------------------------| ------     | ------------------------------ |
+| user   　 　                | references | null: false ,foreign_key: true |
+| tiket   　　                | references | null: false ,foreign_key: true |
+| room    　　                | references | null: false ,foreign_key: true |
+
+### Associatios
+- belongs_to :tiket
+- belongs_to :user
+- has_one    :rooms
+
+### Roomsテーブル
+| ---------------------------| -----------| ------------------------------- |
+| user   　 　                | references | null: false ,foreign_key: true |
+| tiket   　　                | references | null: false ,foreign_key: true |
+
+### Association
+- belongs_to  :message
+- has_one     :entries
+
+
+### Messagesテーブル
+| ---------------------------| -----------| ------------------------------- |
+| message   　 　             | text       | null: false                     |
+| user   　 　                | references | null: false ,foreign_key: true  |
+| room    　　                | references | null: false ,foreign_key: true  |
+
+### Association
+- belongs_to  :room
+- belongs_to  :user

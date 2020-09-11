@@ -1,10 +1,7 @@
 class User < ApplicationRecord
-  has_many :tickets
-<<<<<<< Updated upstream
-  belongs_to :user
-=======
 
->>>>>>> Stashed changes
+  has_many :tickets
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

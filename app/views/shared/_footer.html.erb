@@ -1,0 +1,29 @@
+<footer class='footer'>
+ <div class= 'footer-contents'>
+
+   <div class = 'footer-left'>
+    <ul>Fish man's<br><br>company</ul>  
+    <%= link_to image_tag "fish.png" , class: "fish" %>
+   </div> 
+    
+   <div class = 'footer-center'> 
+    <ul>チケットを見直す</ul>
+    <ul>出品する</ul>
+   </div>
+
+
+   <div class= 'footer-right'>
+    <% if user_signed_in? %>
+       <div class="user_nav_grid-6">
+         <%= link_to '会員情報変更', edit_user_path(current_user), class: "login" %>
+         <%= link_to '退会する', user_path(current_user), class: "sign-up" , method: :delete%>
+       </div>
+    <% else %>
+       <div class="grid-6">
+         <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+         <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+       </div>
+    <% end %>  
+  </div>
+
+</footer>

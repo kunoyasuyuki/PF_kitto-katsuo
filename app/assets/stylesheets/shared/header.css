@@ -6,7 +6,6 @@
  width: 100vw;
  padding: 2vh 15vw;
 
-}
 
 .top-bar-contents {
   display: flex;
@@ -28,11 +27,17 @@
 }
 
 
-.lists-left {
- display:flex;
+.nav {
+ font-size:18px;
+ display: flex;
  justify-content: space-between;
- min-width: 200px;
+ flex: 100%;
+ padding: 1vh 0; 
+ flex-wrap: wrap;
+ width: 100%;
+ padding: 1vh 0;
 }
+
 
 .item-list{
  margin-right:3vw;
@@ -47,6 +52,7 @@
 }
 
 
+
 .message-list {
   display: flex;
   margin-right: 3vw;
@@ -55,11 +61,25 @@
 }
 
 
+
 .lists-right {
   display: flex;
-  list-style: none;
-  align-items: flex-end;
+  justify-content: space-between;
+  min-width: 200px;
 }
+
+
+
+.login {
+  margin-right: 3vw;
+  font-weight: bold;
+  color: #333333;
+}
+
+.sign-up {
+  margin-right: 3vw;
+  font-weight: bold;
+  color: #333333;
 
 .user-nickname {
   text-decoration: none;
@@ -73,3 +93,4 @@
   font-weight: bold;
   color: #333333;
 }
+

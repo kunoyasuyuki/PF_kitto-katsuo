@@ -1,8 +1,5 @@
 class TicketsController < ApplicationController
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
   before_action :set_item, only: [:edit, :show, :update, :destroy]
 
   def index
@@ -57,5 +54,6 @@ class TicketsController < ApplicationController
   def update_params
       params.require(:ticket).permit(:name,:image, :introduction, :category_id)[:image_url, :id]
   end
+
 
 end
