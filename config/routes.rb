@@ -1,5 +1,5 @@
-
-  root "tickets#index"
+Rails.application.routes.draw do
+root "tickets#index"
   devise_for :users, controllers: { registrations: 'users/registrations' }
    resources :users, only: [:edit, :update,:destroy]
    resources :tickets
