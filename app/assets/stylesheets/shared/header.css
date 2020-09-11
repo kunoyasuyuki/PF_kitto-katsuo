@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+}
+
+.top-page-header {
+ width: 100vw;
+ padding: 2vh 15vw;
+
+}
+
+.top-bar-contents {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title{
+  text-align: center;
+  font: normal  bold  30px Proxima Nova;
+  letter-spacing: 1.2px;
+  color: #D02E28;
+  opacity: 1;
+}
+
+.katsuo {
+ width: 10vh;
+ margin-right: 10vw;
+}
+
+
+.lists-left {
+ display:flex;
+ justify-content: space-between;
+ min-width: 200px;
+}
+
+.item-list{
+ margin-right:3vw;
+ font-weight: bold;
+ color: #333333;
+}
+
+.item-new{
+  margin-right:3vw;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.message-list {
+  display: flex;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+.status{
+  margin-right:1vw;
+  font-weight: bold;
+  color: #333333;
+}
