@@ -1,11 +1,10 @@
 class TicketsController < ApplicationController
 
-
   before_action :set_item, only: [:edit, :show, :update, :destroy]
 
   def index
       @tickets = Ticket.includes(:user).order('created_at DESC')
-   end
+  end
   
 
   def new

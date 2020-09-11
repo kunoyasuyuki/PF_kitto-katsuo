@@ -18,27 +18,27 @@
    <ul class="good-point-right1">継続的なメンターとの面談の中で<br>自身の目指す目標に対して<br>定期的に振り返る時間をとっていこう!
    </li>
   </div>
-
 </div>
 
   <div class="item-contents">
     <ul class="item-title"> 注目のチケット</ul>
     <ul class="item-subtitle">新規投稿商品</ul>
   </div>
-
-  <% @tickets.each do |ticket| %>
-  <ul class='list'>
-    <%= link_to ticket_path(ticket.id), mathod: :get do %>
-  <div class='item-img-content'>
-   <%= image_tag ticket.image , class: "item-img"%>
-  </div>
-  <div class='item-info'>
-   <h3 class='item-name'>
-     <%= ticket.name %>
-    </h3>
-  </div>
-  <% end %>
-  <% end %>
-  </ul>
+  
+  <% @tickets.each do |ticket| %> 
+    <ul class="list"> 
+       <%= link_to ticket_path(ticket.id), mathod: :get do %>
+       <div class='item-img-content'> 
+        <%= image_tag ticket.image , class: "item-img"%>
+       </div>
+       <div class='item-info'>
+         <h3 class='item-name'>
+           <%= ticket.name %> 
+         </h3> 
+       </div>
+     <% end %>
+   <% end %> 
+ </ul> 
+  
   <%= render "shared/footer" %>
 
