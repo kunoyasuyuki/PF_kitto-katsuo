@@ -5,25 +5,25 @@
   </div>
 
   <div class='nav'>
-   <ul class='lists-left'>
-    <ul><%= link_to '出品する' , "#", class: "item-list"%></ul>
-    <ul><%= link_to 'メッセージ' , "#", class: "message-list"%></ul>
-   </ul>
+
+   <div class='lists-left'>
+    <% if user_signed_in? %>
+     <div class='user_nav_grid-6'> 
+       <%= link_to '出品する' , new_ticket_path , method: :get %>
+       <%= link_to 'メッセージ' , "#" , class: "message-list"%>
+      </div>
+     </div>
+    <%end%>
   
    <div class='lists-right'>
     <% if user_signed_in? %>
-       <div class="user_nav_grid-5">
-         <%= link_to {current_user.nickname}%>
-         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-       </div>
-    <% else %>
-       <div class="grid-5">
+       <div class="user_nav_grid-6">
+       <div class="grid-6">
          <%= link_to 'ログイン', new_user_session_path, class: "login" %>
          <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
        </div>
     <% end %>
    </div> 
   </div> 
-
 </header>
 

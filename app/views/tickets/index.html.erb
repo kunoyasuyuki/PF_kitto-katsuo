@@ -1,10 +1,11 @@
+
 <%= render "shared/header" %>
 
 <div class='title-contents'>
 
 <%= link_to image_tag "meigen.png" , class: "meigen" %>
 
-<h1 class='message'>Kitto勝男は、学生と社会人の場を作り、成長へのきっかけを生むサービスです。</h1>
+<h1 class='message'>Kitto勝男は学生と社会人のお話の場を作り、成長へのきっかけを生むサービスです。</h1>
 
 <div class="good-points">
   <div class="good-point-left">
@@ -21,8 +22,23 @@
 </div>
 
   <div class="item-contents">
-    <ul class="item-title">ピックアップカテゴリー</ul>
+    <ul class="item-title"> 注目のチケット</ul>
     <ul class="item-subtitle">新規投稿商品</ul>
   </div>
 
+  <% @tickets.each do |ticket| %>
+  <ul class='list'>
+    <%= link_to ticket_path(ticket.id), mathod: :get do %>
+  <div class='item-img-content'>
+   <%= image_tag ticket.image , class: "item-img"%>
+  </div>
+  <div class='item-info'>
+   <h3 class='item-name'>
+     <%= ticket.name %>
+    </h3>
+  </div>
+  <% end %>
+  <% end %>
+  </ul>
   <%= render "shared/footer" %>
+
