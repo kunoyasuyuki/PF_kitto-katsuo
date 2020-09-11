@@ -1,0 +1,33 @@
+<header class='top-page-header'>
+  <div class= 'top-bar-contents'>
+  <div class= 'title'>Kitto 勝男</div>
+   <%= link_to image_tag "katsuo.png" , class: "katsuo" %>
+  </div>
+
+  <div class='nav'>
+   <div class='lists-left'>
+    <% if user_signed_in? %>
+     <div class='user_nav_grid-6'> 
+       <%= link_to '出品する' , new_ticket_path , method: :get %>
+       <%= link_to 'メッセージ' , "#" , class: "message-list"%>
+      </div>
+     </div>
+    <%end%>
+  
+   <div class='lists-right'>
+    <% if user_signed_in? %>
+       <div class="user_nav_grid-6">
+         <%= link_to {current_user.nickname}%>
+         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+       </div>
+    <% else %>
+       <div class="grid-6">
+         <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+         <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+       </div>
+    <% end %>
+   </div> 
+  </div> 
+
+</header>
+
