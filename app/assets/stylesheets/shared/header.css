@@ -5,6 +5,7 @@
 .top-page-header {
  width: 100vw;
  padding: 2vh 15vw;
+}
 
 
 .top-bar-contents {
@@ -15,82 +16,82 @@
 
 .title{
   text-align: center;
-  font: normal  bold  30px Proxima Nova;
+  font:  bold  40px Proxima Nova;
   letter-spacing: 1.2px;
   color: #D02E28;
   opacity: 1;
 }
 
 .katsuo {
- width: 10vh;
+ width: 15vh;
  margin-right: 10vw;
 }
 
 
 .nav {
- font-size:18px;
+ font-size:20px;
  display: flex;
  justify-content: space-between;
- flex: 100%;
- padding: 1vh 0; 
  flex-wrap: wrap;
  width: 100%;
  padding: 1vh 0;
 }
 
+.lists-left {
+  display: flex;
+}
 
 .item-list{
- margin-right:3vw;
- font-weight: bold;
- color: #333333;
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font:  bold  25px Proxima Nova;
 }
 
 .item-new{
-  margin-right:3vw;
-  font-weight: bold;
-  color: #333333;
-}
-
-
-
-.message-list {
-  display: flex;
+  text-decoration: none;
   margin-right: 3vw;
   color: #333333;
-  font-weight: bold;
+  font:  bold  25px Proxima Nova;
 }
 
-
+.item-message{ 
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font:  bold  25px Proxima Nova;
+}
 
 .lists-right {
   display: flex;
+  list-style: none;
   justify-content: space-between;
   min-width: 200px;
 }
 
 
-
-.login {
-  margin-right: 3vw;
-  font-weight: bold;
-  color: #333333;
-}
-
-.sign-up {
-  margin-right: 3vw;
-  font-weight: bold;
-  color: #333333;
-
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
-  font-weight: bold;
+  font:  bold  25px Proxima Nova;
 }
 
-.status{
-  margin-right:1vw;
-  font-weight: bold;
+
+.logout {
+  text-decoration: none;
   color: #333333;
+  font:  bold  25px Proxima Nova;
 }
 
+.login {
+  text-decoration: none;
+  color: #333333;
+  font:  bold  25px Proxima Nova;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+  font:  bold  25px Proxima Nova;
+}

@@ -1,43 +1,37 @@
 <header class='top-page-header'>
   <div class= 'top-bar-contents'>
-  <div class= 'title'>Kitto 勝男</div>
-   <%= link_to image_tag "katsuo.png" , class: "katsuo" %>
+    <div class= 'title'>Kitto 勝男</div>
+    <%= link_to image_tag "katsuo.png" , class: "katsuo" %>
   </div>
 
   <div class='nav'>
-
-   <div class='lists-left'>
-    <% if user_signed_in? %>
-     <div class='user_nav_grid-6'> 
-       <%= link_to 'トップページに戻る' , root_path ,class:"item-list" %>
-       <%= link_to '出品する' , new_ticket_path , class: "item-list" , method: :get %>
-       <%= link_to 'メッセージを確認' , '#' ,  class: 'item-list' %>
-      </div>
-    <% else %>
-     <div class="grid-6">
-      <%= link_to 'トップページに戻る' , root_path , class: "item-list" %>
-     </div>
-    <%end%>
-
-   <div class='lists-right'>
-    <% if user_signed_in? %>
-<<<<<<< Updated upstream
-       <div class="user_nav_grid-6">
-       <div class="grid-6">
-         <%= link_to 'ログイン', new_user_session_path, class: "login" %>
-         <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
-=======
-     <div class="user_nav_grid-6">
-         <%= link_to {current_user.nickname} %>
-         <%= link_to "ログアウト", destroy_user_session_path, method: :delete , class:"status"%>
-    <% else %>
-      <div class="grid-6">
-         <%= link_to 'ログインする', new_user_session_path, class:"status" %>
-         <%= link_to '新規登録', new_user_registration_path, class:"status" %>
->>>>>>> Stashed changes
+    <ul class='lists-left'>
+      <% if user_signed_in? %>
+       <div class='user_nav grid-6'> 
+        <%= link_to 'トップページに戻る' , root_path ,class:"item-list" %>
+        <%= link_to '出品する' , new_ticket_path , class: "item-new" , method: :get %>
+        <%= link_to 'メッセージを確認' , '#' ,  class: 'item-message' %>
        </div>
-    <% end %>
-   </div> 
-  </div> 
+      <%else%>
+       <div class="grid-6">
+        <%= link_to 'トップページに戻る' , root_path , class: "item-list" %>
+       </div>
+      <%end%>
+    </ul>
+
+   <ul class='lists-right'>
+     <% if user_signed_in? %>
+      <div class="user_nav grid-6">
+          <%= link_to {current_user.nickname} %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete , class:"logout"%>
+       </div> 
+     <% else %>
+       <div class="grid-6">
+          <%= link_to 'ログインする', new_user_session_path, class:"login" %>
+          <%= link_to '新規登録', new_user_registration_path, class:"sign-up" %>
+        </div>
+     <% end %>
+   </ul> 
+  </div>
 </header>
 
