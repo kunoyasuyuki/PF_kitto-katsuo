@@ -50,22 +50,37 @@ margin-right:100px;
 .user_nav_grid-6{
   display: flex;
   flex-flow: column;
-  margin:10px;
 }
 
 .grid-6{
   display: flex;
-  flex-flow: column;
-  margin:10px;
+}
+
+.info-change{
+  margin:50px;
+  color: #1C2126;
+  text-decoration: none;
+}
+
+.withdrawal{
+  margin:50px;
+  color: #1C2126;
+  text-decoration: none;
+  
 }
 
 
 .login{
  margin:50px;
+ font: bold 30px Proxima Nova;
  color: #1C2126;
+ text-decoration: none;
 }
 
 .sign-up{
+ font: bold 30px/30px Proxima Nova;
  margin:50px;
  color: #1C2126;
+ text-decoration: none;
+
 }

@@ -42,6 +42,7 @@
 }
 
 .item-list{
+  display: flex;
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
@@ -49,6 +50,7 @@
 }
 
 .item-new{
+  display: flex;
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
@@ -56,6 +58,7 @@
 }
 
 .item-message{ 
+  display: flex;
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
@@ -64,9 +67,14 @@
 
 .lists-right {
   display: flex;
+  
   list-style: none;
   justify-content: space-between;
   min-width: 200px;
+}
+
+.user_nav{
+  text-decoration: none;
 }
 
 
@@ -84,10 +92,19 @@
   font:  bold  25px Proxima Nova;
 }
 
+
+.grid-6{
+  display:flex;
+  text-decoration: none;
+
+}
+
 .login {
   text-decoration: none;
   color: #333333;
   font:  bold  25px Proxima Nova;
+  
+
 }
 
 .sign-up {
