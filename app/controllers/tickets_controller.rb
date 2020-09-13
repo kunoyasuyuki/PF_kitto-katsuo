@@ -44,7 +44,7 @@ class TicketsController < ApplicationController
   end
             
   def ticket_params
-    params.require(:ticket).permit(:name,:image, :introduction,:category_id).merge(user_id: current_user.id)
+    params.require(:ticket).permit(:name,:image, :introduction,:category_id,:price).merge(user_id: current_user.id)
   end
   
   def set_item

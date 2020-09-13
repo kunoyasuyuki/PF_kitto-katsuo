@@ -4,7 +4,7 @@ class Ticket < ApplicationRecord
    extend ActiveHash::Associations::ActiveRecordExtensions
       
    belongs_to_active_hash :category
-       
+
    #空の投稿を保存できないようにする
    with_options presence: true do
     validates :image

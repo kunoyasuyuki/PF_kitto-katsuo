@@ -6,6 +6,7 @@ class Tickets < ActiveRecord::Migration[6.0]
         t.text       :introduction,               null: false 
         t.references :user,                       null: false , foreign_key: true
         t.integer    :category_id,                null: false 
+        t.integer    :price_id                    null: false   
         t.timestamps
        end
       end

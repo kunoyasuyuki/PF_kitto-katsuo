@@ -109,6 +109,38 @@
   margin: 2vh 0;
 }
 
+.sell-price {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.price-content {
+  width: 300px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-text {
+  /* min-width: 170px; */
+  display: flex;
+  align-items: center;
+}
+
+.sell-yen {
+  font-size: 18px;
+}
+
+.price-input {
+  height: 30px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+
 /* 下部ボタン */
 .sell-btn-contents {
   width: 100%;
@@ -123,6 +155,7 @@
   height: 50px;
   font-size: 14px;
   margin-bottom: 4vh;
+  margin-top:50px;
 }
 
 .back-btn {
