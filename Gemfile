@@ -70,5 +70,4 @@ gem 'wicked'
 
 #pay.jp
 gem 'payjp'
-
 gem 'gon'
