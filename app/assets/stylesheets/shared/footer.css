@@ -21,12 +21,15 @@ background-color: #E58888;
   letter-spacing: 0.5px;
   color: #1C2126;
   opacity: 1;
+  margin-top: 60px;
 }
 
 .fish{
   width: 20vh;
   background: #E58888 ;
-  margin-left: 60px;
+  margin-left: 35px;
+  margin-top: 60px;
+
 }
 
 
@@ -57,14 +60,16 @@ margin-right:100px;
 }
 
 .info-change{
+  font-size: 30px;
   margin:50px;
-  color: #1C2126;
+  color: #000000;
   text-decoration: none;
 }
 
 .withdrawal{
+  font-size: 30px;
   margin:50px;
-  color: #1C2126;
+  color: #000000;
   text-decoration: none;
   
 }
@@ -72,7 +77,7 @@ margin-right:100px;
 
 .login{
  margin:50px;
- font: bold 30px Proxima Nova;
+ font: bold 50px Proxima Nova;
  color: #1C2126;
  text-decoration: none;
 }

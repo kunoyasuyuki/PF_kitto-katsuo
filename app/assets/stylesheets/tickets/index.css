@@ -1,5 +1,8 @@
 a {
   text-decoration: none;
+  color: lightcoral;
+  font: bold  25px Proxima Nova;
+  margin-right:10px;
 }
 
 .main {
@@ -99,24 +102,40 @@ width: 100%;
 }
 
 .item-lists {
-  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 400px;
+  width: 100vw;
 }
 
 .item-lists>.list {
   width: 37vh;
   padding: 1vw;
   background-color: #FFF;
+  
 }
 
 
 .item-img-content {
   position: relative;
+
 }
 
 .item-img {
-  width: 33vh;
-  height: 33vh;
+  
+  width: 45vh;
+  height: 45vh;
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  background-position: left top;  /* 横長画像の左上を基準に表示 */
+
+}
+
+
+
+.item-name {
+  font-size: 2.5vh;
+  text-decoration: none;
+  margin-left: 10px;
+  color:gray;
 }
