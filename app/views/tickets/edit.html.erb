@@ -4,7 +4,7 @@
 
   </header>
   <div class="items-sell-main">
-    <h2 class="items-sell-title">商品の情報を入力</h2>
+    <h2 class="items-sell-title">チケットを発行する</h2>
     <%= form_with model: @ticket, local: true do |form| %>
     <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
    
@@ -12,7 +12,7 @@
     <%# 出品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
-        出品画像
+        カバー画像を選択
         <span class="indispensable">必須</span>
       </div>
       <div class="click-upload">
@@ -29,23 +29,49 @@
     <%# 商品名と商品説明 %>
     <div class="new-items">
       <div class="weight-bold-text">
-        商品名
+         チケットのタイトル
         <span class="indispensable">必須</span>
       </div>
-      <%= form.text_area :name , class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <%= form.text_area :name , class:"items-text", id:"item-name", placeholder:"チケットのタイトル（（必須 40文字まで)", maxlength:"40" %>
       <div class="items-explain">
         <div class="weight-bold-text">
-          商品の説明
+          詳しい説明
           <span class="indispensable">必須</span>
         </div>
-        <%= form.text_area :introduction, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
+        <%= form.text_area :introduction, class:"items-text", id:"item-info", placeholder:"チケットをご覧いただきありがとうございます。
+ このチケットでは〇〇の相談を提供しています。
+
+■ 経験・実績・スキル
+ ・◯◯年以上◯◯の経験があります。
+
+■ 提供できること
+ ・◯◯の相談にのることができます。
+
+■ こんな人におすすめ
+ ・◯◯に興味を持っている方
+ ・◯◯を学びたい方
+
+■ 当日の流れとスケジュール
+ 1. 挨拶
+ 2. 相談内容をヒアリング
+ 3. 個別の質問に回答
+ 4. 終了
+
+■ 調整可能な曜日・時間帯
+ ・平日19時以降
+ ・土曜日/日曜日 13時から18時
+
+■ 購入にあたってのお願い
+ ・当日のお申し込みはご遠慮願います。
+ ・3日から1週間前後の余裕を持った日時でお申し込みください。
+ ・購入申込時に第三希望まで日時をお知らせください。。" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
     <%# /商品名と商品説明 %>
 
     <%# 商品の詳細 %>
     <div class="items-detail">
-      <div class="weight-bold-text">商品の詳細</div>
+      <div class="weight-bold-text">チケットのジャンル</div>
       <div class="form">
         <div class="weight-bold-text">
           カテゴリー
