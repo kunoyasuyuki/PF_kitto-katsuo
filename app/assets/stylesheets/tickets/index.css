@@ -74,7 +74,7 @@ width: 100%;
 
 .item-subtitle{
   font-size: 40px;
-  color: #3ccace;
+  color:#e05252;
   margin-top: 5vw;
 }
 
@@ -106,36 +106,45 @@ width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 400px;
-  width: 100vw;
+  width: 95vw;
 }
 
-.item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
-  
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin:30px;
 }
-
-
-.item-img-content {
-  position: relative;
-
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
 }
-
-.item-img {
-  
-  width: 45vh;
-  height: 45vh;
-  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-  background-position: left top;  /* 横長画像の左上を基準に表示 */
-
+.card-content {
+  padding: 20px;
 }
-
-
-
-.item-name {
-  font-size: 2.5vh;
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
   text-decoration: none;
-  margin-left: 10px;
-  color:gray;
+  color:red;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
 }
