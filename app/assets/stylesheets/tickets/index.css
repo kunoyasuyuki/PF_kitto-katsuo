@@ -1,5 +1,8 @@
 a {
   text-decoration: none;
+  color: lightcoral;
+  font: bold  25px Proxima Nova;
+  margin-right:10px;
 }
 
 .main {
@@ -71,7 +74,7 @@ width: 100%;
 
 .item-subtitle{
   font-size: 40px;
-  color: #3ccace;
+  color:#e05252;
   margin-top: 5vw;
 }
 
@@ -99,24 +102,49 @@ width: 100%;
 }
 
 .item-lists {
-  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 400px;
+  width: 95vw;
 }
 
-.item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin:30px;
 }
-
-
-.item-img-content {
-  position: relative;
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
 }
-
-.item-img {
-  width: 33vh;
-  height: 33vh;
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color:red;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
 }
