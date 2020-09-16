@@ -12,6 +12,7 @@ class TicketsController < ApplicationController
     @categories = Category.all
   end
 
+  
   def create
     @ticket = Ticket.new(ticket_params)
     if @ticket.save
@@ -22,6 +23,8 @@ class TicketsController < ApplicationController
   end
 
   def show
+    @comments = Comment.all 
+    @comment = Comment.new
   end
 
   def edit
