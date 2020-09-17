@@ -14,21 +14,44 @@
   align-items: center;
 }
 
+.left-top{
+ display: flex;
+}
+
 .title{
+  margin-top: 35px;
   text-align: center;
-  font:  bold  40px Proxima Nova;
-  letter-spacing: 1.2px;
+  font:  bold  50px Proxima Nova;
+  letter-spacing: 2px;
   color: #D02E28;
   opacity: 1;
 }
 
+
+
 .katsuo {
  width: 15vh;
  margin-right: 10vw;
+ height: 15vh;
+}
+
+.right_top{
+  display: flex;
+}
+
+.select-box{
+ display: flex;
+ margin-top: 10px;
 }
 
 
+.ticket-search{
+ margin-left:10px;
+
+}
+
 .nav {
+margin-top: 20px;
  font-size:20px;
  display: flex;
  justify-content: space-between;

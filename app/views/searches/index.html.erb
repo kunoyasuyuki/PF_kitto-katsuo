@@ -1,0 +1,28 @@
+
+<h1>
+  商品検索
+</h1>
+<%= search_form_for @p, url:  searches_search_path do |f| %>
+  <%= f.label :name_eq, '商品名' %>
+  <%= f.collection_select :name_eq, @ticket_name, :name, :name,  include_blank: '指定なし' %>
+  <br>
+  
+  <%= f.label :category_id_eq, 'カテゴリ名' %>
+  <%= f.collection_select :category_id_eq, @ticket_category_id, :category_id, :category_id,  include_blank: '指定なし' %>
+  <br>
+  <%= f.submit '検索' %>
+
+  <br>
+  <%# 商品一覧 %>
+  <% @tickets.each do |ticket| %>
+  <td>
+  <br>
+  <li>
+    <%= ticket.name %>
+    <%= image_tag ticket.image %>
+    <%= ticket.price %>
+    <%= ticket.category.name %>
+  </li>
+  <% end %>
+
+<% end %>

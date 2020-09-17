@@ -1,11 +1,18 @@
 class TicketsController < ApplicationController
 
   before_action :set_item, only: [:edit, :show, :update, :destroy]
+  before_action :search_ticket, only: [:index, :search]
 
   def index
       @tickets = Ticket.includes(:user).order('created_at DESC')
+      @tickets = Ticket.all 
+      set_ticket_column  
   end
-  
+
+
+  def search
+    @results = @p.result # 検索条件にマッチした商品の情報を取得
+  end
 
   def new
     @ticket = Ticket.new
@@ -46,6 +53,8 @@ class TicketsController < ApplicationController
     end
   end
             
+  private
+
   def ticket_params
     params.require(:ticket).permit(:name,:image, :introduction,:category_id,:price).merge(user_id: current_user.id)
   end
@@ -59,5 +68,14 @@ class TicketsController < ApplicationController
       params.require(:ticket).permit(:name,:image, :introduction, :category_id)[:image_url, :id]
   end
 
+  
+  def search_ticket
+    @p = Ticket.ransack(params[:q])  # 検索オブジェクトを生成
+  end
 
+  def set_ticket_column
+   @ticket_name = Ticket.select("name").distinct  # 重複なくnameカラムのデータを取り出す
+   @ticket_category_id = Ticket.select("category_id").distinct 
+  end
+  
 end
