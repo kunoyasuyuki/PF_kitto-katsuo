@@ -11,6 +11,8 @@ class TicketsController < ApplicationController
 
 
   def search
+    @tickets = Ticket.includes(:user).order('created_at DESC')
+    @tickets = Ticket.all 
     @results = @p.result # 検索条件にマッチした商品の情報を取得
   end
 

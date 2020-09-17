@@ -39,10 +39,28 @@
   display: flex;
 }
 
-.select-box{
- display: flex;
- margin-top: 10px;
+#q_category_id_eq{
+  height: 45px;
+  width: 10vw;
+  padding-left: 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 351px;
+  background: whitesmoke;
 }
+
+.submit-btn{
+  background: whitesmoke;
+  border-radius: 10px; 
+  position: absolute;
+  left: 1100px;
+  top: 110px;
+  width: 5vw;
+
+  border-color:orange ;
+}
+
+
 
 
 .ticket-search{

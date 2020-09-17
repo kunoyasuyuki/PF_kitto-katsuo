@@ -5,10 +5,10 @@ root "tickets#index"
    resources :users, only: [:edit, :update,:destroy]
      
 
-   
-   get 'tickets/search'
-
-   resources :tickets do
+  resources :tickets do
+    collection do 
+      get 'search'
+    end
      resources :orders, only:[:index, :create]
      resources :comments, only:[:create]
   end
