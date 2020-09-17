@@ -71,3 +71,7 @@ gem 'wicked'
 #pay.jp
 gem 'payjp'
 gem 'gon'
+
+
+#検索機能ransackの導入
+gem 'ransack'

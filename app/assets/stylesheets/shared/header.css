@@ -14,21 +14,62 @@
   align-items: center;
 }
 
+.left-top{
+ display: flex;
+}
+
 .title{
+  margin-top: 35px;
   text-align: center;
-  font:  bold  40px Proxima Nova;
-  letter-spacing: 1.2px;
+  font:  bold  50px Proxima Nova;
+  letter-spacing: 2px;
   color: #D02E28;
   opacity: 1;
 }
 
+
+
 .katsuo {
  width: 15vh;
  margin-right: 10vw;
+ height: 15vh;
+}
+
+.right_top{
+  display: flex;
+}
+
+#q_category_id_eq{
+  height: 45px;
+  width: 10vw;
+  padding-left: 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 351px;
+  background: whitesmoke;
+}
+
+.submit-btn{
+  background: whitesmoke;
+  border-radius: 10px; 
+  position: absolute;
+  left: 1100px;
+  top: 110px;
+  width: 5vw;
+
+  border-color:orange ;
 }
 
 
+
+
+.ticket-search{
+ margin-left:10px;
+
+}
+
 .nav {
+margin-top: 20px;
  font-size:20px;
  display: flex;
  justify-content: space-between;
