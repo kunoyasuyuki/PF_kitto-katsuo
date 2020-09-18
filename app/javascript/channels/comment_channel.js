@@ -28,20 +28,6 @@ consumer.subscriptions.create("CommentChannel", {
     const newMessage = document.getElementById('comment_text');
     messages.insertAdjacentHTML('afterbegin', html);
     newMessage.value='';
-
-
-
-
-  // received(data) {
-  //   const html = `<p>${data.user.nickname}</p>`;
-  //   const html2 = `<p>${data.content.text}</p>`;
-  //   const html3 = `<p>${comment.created_at}</p>`;
-  //   const messages = document.getElementById('messages');
-  //   const newMessage = document.getElementById('comment_text');
-  //   messages.insertAdjacentHTML('afterbegin', html);
-  //   messages.insertAdjacentHTML('afterbegin', html2);
-  //   messages.insertAdjacentHTML('afterbegin', html3);
-  //   newMessage.value='';
   }
 });
 
