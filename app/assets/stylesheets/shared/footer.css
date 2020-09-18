@@ -41,15 +41,6 @@ justify-content: space-around;
 flex-direction: column;
 }
 
-.footer-right{
-font: bold 30px/30px Proxima Nova;
-text-align:center;
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-margin-right:100px;
-}
-
 .user_nav_grid-6{
   display: flex;
   flex-flow: column;
@@ -61,31 +52,44 @@ margin-right:100px;
 
 .info-change{
   font-size: 30px;
-  margin:50px;
+  margin-top:60px;
+  margin-bottom: 60px;
   color: #000000;
   text-decoration: none;
 }
 
 .withdrawal{
   font-size: 30px;
-  margin:50px;
+  margin-top:60px;
   color: #000000;
   text-decoration: none;
   
 }
 
 
-.login{
- margin:50px;
- font: bold 50px Proxima Nova;
+.footer-right{
+  font: bold 30px/30px Proxima Nova;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  margin-right:100px;
+  }
+  
+
+.login-footer{
+ position: absolute;
+ bottom: -2485px;
+ margin:0px;
+ font: bold 30px Proxima Nova;
  color: #1C2126;
  text-decoration: none;
 }
 
-.sign-up{
- font: bold 30px/30px Proxima Nova;
- margin:50px;
+.sign-up-footer{
+ font: bold 30px Proxima Nova;
+ margin:0px;
  color: #1C2126;
  text-decoration: none;
+ margin-top:220px;
 
 }

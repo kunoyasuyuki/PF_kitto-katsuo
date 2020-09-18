@@ -16,7 +16,7 @@ width: 100%;
 .message
 {
   text-align: center;
-  font: bold 35px/60px Tsukushi A Round Gothic;
+  font: bold 35px/80px Tsukushi A Round Gothic;
   color: #707070;
   opacity: 1;
 }
@@ -28,35 +28,35 @@ width: 100%;
 }
 
 .good-point-left{
-  margin-top: 5vw;
+  margin-top: 7vw;
   text-align: center;
-  font: 30px/30px Tsukushi A Round Gothic;
+  font:bold 30px/25px Tsukushi A Round Gothic;
   letter-spacing: 10px;
-  color: #1C2126;
+  color: indianred;
 }
 
 .good-point-left1{
   margin-top: 5vw;
   text-align: center;
-  font: 25px/35px Tsukushi A Round Gothic;
-  color: #1C2126;
+  font: bold 25px/35px Tsukushi A Round Gothic;
+  color: #707070;
   letter-spacing: 2px;
 }
 
 
 .good-point-right{
-  margin-top: 5vw;
+  margin-top: 7vw;
   text-align: center;
-  font: 30px/30px Tsukushi A Round Gothic;
+  font:bold 30px/25px Tsukushi A Round Gothic;
   letter-spacing: 10px;
-  color: #1C2126;
+  color: indianred;
 }
 
 .good-point-right1{
   margin-top: 5vw;
   text-align: center;
-  font: 25px/35px Tsukushi A Round Gothic;
-  color: #1C2126;
+  font: bold 25px/35px Tsukushi A Round Gothic;
+  color: #707070;
   letter-spacing: 2px;
 }
 
@@ -68,13 +68,11 @@ width: 100%;
   padding: 10vh 0;
 }
 
-.item-title {
- font-size: 40px;
-}
 
 .item-subtitle{
-  font-size: 40px;
-  color:#e05252;
+  
+  font: bold 40px/35px Tsukushi A Round Gothic;
+  color:dodgerblue;;
   margin-top: 5vw;
 }
 
@@ -125,10 +123,10 @@ width: 100%;
   padding: 20px;
 }
 .card-title {
-  font-size: 20px;
+  font: bold 20px Tsukushi A Round Gothic;
   margin-bottom: 20px;
   text-align: center;
-  color: #333;
+  color: #777;
 }
 .card-text {
   color: #777;
