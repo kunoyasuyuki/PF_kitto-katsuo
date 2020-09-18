@@ -1,25 +1,30 @@
-<h1>
-  検索結果
+<%= render "shared/header" %>
+<h1 class ="search-result">
+  検索の結果
 </h1>
 <%# 検索結果の個数で条件分岐 %>
-<% if @results.length !=0 %>
-  <% @results.each do |result| %>
-   <%= link_to ticket_path(result.id), method: :get do  %> 
 
-      <div class="card-link">
-        <section class="card">
-         <%= image_tag result.image ,class: "card-img"%>
-        <div class="card-content">
-         <h1 class="card-title"> <%= result.name %> </h1>
-           <p class="card-text">   <%= result.introduction  %></p> 
-           <%= link_to "About" ,ticket_path(result.id)%>
-          </div>
-    </div>
-  <% end %>
-  <% end %>
-<% else %>
-  該当する商品はありません
-<% end %>
 
-<br>
-<%= link_to 'トップページへ戻る', root_path %>
+<ul class="item-lists"> 
+
+ <% if @results.length !=0 %>
+      <% @results.each do |result| %>
+     <%= link_to ticket_path(result.id), method: :get do  %> 
+     <section class="card">
+        <%= image_tag result.image ,class: "card-img"%>
+          <div class="card-content">
+        <h1 class="card-title"> <%= result.name %> </h1>
+        <p class="card-text">   <%= result.introduction  %></p> 
+        </div>
+        <div class="card-link">
+         <%= link_to "About" ,ticket_path(result.id)%>
+        </div>
+      </section>
+     <% end %>
+     <% end %>
+     </ul>
+   <% else %>
+  <h1 class ="result">該当するチケットはありませんでしたm(__)m</h1>
+  <% end %>
+
+<%= link_to 'トップページへ戻る', root_path , {class: "back-link"} %>

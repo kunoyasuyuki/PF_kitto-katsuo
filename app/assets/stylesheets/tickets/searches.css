@@ -1,0 +1,23 @@
+.search-result
+{
+  font: bold 40px Proxima Nova;
+  margin-left: 215px;
+  margin-top: 50px;
+  color:rgb(7, 144, 168);
+}
+
+.result{
+
+  font: bold 40px Proxima Nova;
+  margin-top: 150px;
+  margin-bottom: 120px;
+  margin-left: 130px;
+  color:gray;
+}
+
+.back-link{
+  font: bold 40px Proxima Nova;
+  margin-left: 130px;
+  color:orange;
+  text-align:center;
+}
