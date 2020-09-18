@@ -2,8 +2,9 @@ Rails.application.routes.draw do
 
 root "tickets#index"
   devise_for :users, controllers: { registrations: 'users/registrations' }
-   resources :users, only: [:edit, :update,:destroy]
-     
+   resources :users, only: [:edit, :update, :destroy,:index, :show]
+   resources :messages, :only => [:create]
+   resources :rooms, :only => [:create, :show, :index]
 
   resources :tickets do
     collection do 
