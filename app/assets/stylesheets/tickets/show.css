@@ -186,7 +186,7 @@
 
 
 
-.messages {
+#messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
