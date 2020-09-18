@@ -3,25 +3,19 @@
 <div class="item-show">
 <%= render "shared/second-header" %>
   <div class="item-box">
-    <h2 class="name">
-      <%= @ticket.name %>
-    </h2>
+    <h1 class="box18">
+      <p><%= @ticket.name %></p>
+    </h1>
     <div class='item-img-content'>
       <%= image_tag @ticket.image ,class:"item-box-img" %>
      
      
     </div>
     <%# ログインしていて、なおかつ、ログインしているユーザと出品しているユーザが同一人物でないとき表示しましょう。 %>
-    <% if user_signed_in? && @ticket.user_id == current_user.id  %>
-      <%= link_to '商品の編集',  edit_ticket_path  , method: :get, class: "item-red-btn" %>
-      <p class='or-text'>or</p>
-      <%= link_to '削除', ticket_path(@ticket.id) , method: :delete, class:'item-destroy' %>
-    <%elsif%>
-      <%= link_to 'チャット画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%>
-    <%end%>
+   
 
     <div class="item-explain-box">
-      <span><%= @ticket.introduction %></span>
+      <p><%= @ticket.introduction %></p>
     </div>
     <table class="detail-table">
       <tbody>
@@ -36,28 +30,28 @@
       </tbody>
     </table>
   
- 
+   <% if user_signed_in? && @ticket.user_id == current_user.id  %>
+      <%= link_to '商品の編集',  edit_ticket_path  , method: :get, class: "item-red-btn" %>
+      <p class='or-text'>or</p>
+      <%= link_to '削除', ticket_path(@ticket.id) , method: :delete, class:'item-destroy' %>
+     <%elsif%>
+      <%= link_to 'チャット画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%>
+    <%end%>
+
+
 
   <div class="comment-box">
-   
      <%= form_with model: @comment ,url: ticket_comments_path(@ticket),local: true do |f| %>
-       <%= f.text_field :text %>
-
-      <%# <textarea class="comment-text"></textarea> %>
-      <p class="comment-warn">
-        相手のことを考え丁寧なコメントを心がけましょう。
-        <br>
-      </p>
-       <button type="submit" class="comment-btn">
-        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <%= f.submit 'コメントする' %>
-      
-      <%# <button type="submit" class="comment-btn"> %>
-       
-        <%# <span>コメントする<span> %>
-      <%# </button> %>
-
-    <%end%>
+       <%= f.text_field :text ,{class: "comment-text"} %>
+        <p class="comment-warn">相手のことを考え丁寧なコメントを心がけましょう。</p>
+        <button type="submit" class="comment-btn">
+            <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+            <span> 
+              コメントする
+              <% f.submit  %> 
+            <span>
+        </button>
+     <%end%>
   </div>
   
    <div id='messages'>
@@ -79,14 +73,4 @@
      </div>
      <% end %>
     </div>
-
-  <div class="links">
-    <a href="#" class="change-item-btn">
-      ＜ 前の商品
-    </a>
-    <a href="#" class="change-item-btn">
-      後ろの商品 ＞
-    </a>
-  </div>
-  <a href="#" class='another-item'><%= "商品のカテゴリー名" %>をもっと見る</a>
 </div>
