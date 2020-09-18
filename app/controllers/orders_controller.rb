@@ -11,6 +11,11 @@ class OrdersController < ApplicationController
 
   def new
     @order = Order.new
+    if current_user.student_division_id == 2
+      @order.price = 1000 
+    else
+      @order.price = 1500 
+    end
   end
 
   def create
@@ -35,7 +40,7 @@ class OrdersController < ApplicationController
   def pay_item
     @order = Order.new(order_params)
     if current_user.student_division_id == 2
-      @order.priced = 1000 
+      @order.price = 1000 
       @order.save
     else
       @order.price = 1500 
