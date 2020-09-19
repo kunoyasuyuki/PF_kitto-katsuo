@@ -52,6 +52,12 @@ ActiveRecord::Schema.define(version: 2020_09_18_130813) do
     t.index ["user_id"], name: "index_entries_on_user_id"
   end
 
+  create_table "genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "room_id", null: false
@@ -70,6 +76,17 @@ ActiveRecord::Schema.define(version: 2020_09_18_130813) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["ticket_id"], name: "index_orders_on_ticket_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "size", null: false
+    t.string "status", null: false
+    t.integer "price", null: false
+    t.bigint "genre_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["genre_id"], name: "index_products_on_genre_id"
   end
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -117,5 +134,6 @@ ActiveRecord::Schema.define(version: 2020_09_18_130813) do
   add_foreign_key "messages", "users"
   add_foreign_key "orders", "tickets"
   add_foreign_key "orders", "users"
+  add_foreign_key "products", "genres"
   add_foreign_key "tickets", "users"
 end
