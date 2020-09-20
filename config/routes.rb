@@ -2,19 +2,23 @@ Rails.application.routes.draw do
 
 root "tickets#index"
   devise_for :users, controllers: { registrations: 'users/registrations' }
-   resources :users, only: [:edit, :update, :destroy,:index, :show]
-   resources :messages, :only => [:create]
-   resources :rooms, :only => [:create, :show, :index]
+   resources :users do
+   resources :messages, only:[:index]
+   end
+   
+   resources :rooms, only: [:new, :create]
 
-  resources :tickets do
+   resources :tickets do
+    resources :rooms, only: [:new, :create]
     collection do 
       get 'search'
     end
+ 
      resources :orders, only:[:index, :create]
      resources :comments, only:[:create]
   end
+ 
 
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_18_130813) do
+ActiveRecord::Schema.define(version: 2020_09_20_111601) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -43,21 +43,6 @@ ActiveRecord::Schema.define(version: 2020_09_18_130813) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "entries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "room_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["room_id"], name: "index_entries_on_room_id"
-    t.index ["user_id"], name: "index_entries_on_user_id"
-  end
-
-  create_table "genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "room_id", null: false
@@ -78,21 +63,21 @@ ActiveRecord::Schema.define(version: 2020_09_18_130813) do
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
-  create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "size", null: false
-    t.string "status", null: false
-    t.integer "price", null: false
-    t.bigint "genre_id"
+  create_table "room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "room_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["genre_id"], name: "index_products_on_genre_id"
+    t.index ["room_id"], name: "index_room_users_on_room_id"
+    t.index ["user_id"], name: "index_room_users_on_user_id"
   end
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "ticket_id"
+    t.index ["ticket_id"], name: "index_rooms_on_ticket_id"
   end
 
   create_table "tickets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -128,12 +113,12 @@ ActiveRecord::Schema.define(version: 2020_09_18_130813) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "tickets"
   add_foreign_key "comments", "users"
-  add_foreign_key "entries", "rooms"
-  add_foreign_key "entries", "users"
   add_foreign_key "messages", "rooms"
   add_foreign_key "messages", "users"
   add_foreign_key "orders", "tickets"
   add_foreign_key "orders", "users"
-  add_foreign_key "products", "genres"
+  add_foreign_key "room_users", "rooms"
+  add_foreign_key "room_users", "users"
+  add_foreign_key "rooms", "tickets"
   add_foreign_key "tickets", "users"
 end

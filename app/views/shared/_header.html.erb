@@ -22,7 +22,7 @@
        <div class='user_nav grid-6'> 
         <%= link_to 'トップページに戻る' , root_path ,class:"item-list" %>
         <%= link_to '出品する' , new_ticket_path , class: "item-new" , method: :get %>
-        <%= link_to 'メッセージを確認' , '#' ,  class: 'item-message' %>
+        <%= link_to 'メッセージを確認' ,  user_messages_path(current_user.id) ,  class: 'item-message' , method: :get %>
        </div>
       <%else%>
        <div class="grid-6">
