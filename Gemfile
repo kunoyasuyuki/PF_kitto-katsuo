@@ -78,3 +78,7 @@ gem 'ransack'
 
 #挙動確認
 gem 'pry-rails'
+
+group :production do
+  gem 'rails_12factor'
+end

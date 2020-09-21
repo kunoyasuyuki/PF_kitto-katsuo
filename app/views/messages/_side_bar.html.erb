@@ -1,6 +1,6 @@
 <div class="side-bar-header">
   <div class="header-name">
-    <a href="#">ログインしているユーザ名</a>
+    <a href="#"><%= current_user.nickname%></a>
   </div>
   <div class="create-room">
  
@@ -8,14 +8,11 @@
 </div>
 
 
-<div class="rooms">
-　　ログインユーザー部屋一覧<br><br>
-    (チケット名)の部屋<br>
-    (チケット名)の部屋<br>
+<div class="rooms">  
    <% current_user.rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
-        <a href="#"><%= room.name%></a>
+   
       </div>
     </div>
   <% end %>

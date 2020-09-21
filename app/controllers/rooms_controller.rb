@@ -8,6 +8,7 @@ class RoomsController < ApplicationController
    end
 
 
+  
    def create
        @room = Room.new(name: params[:name], ticket_id: params[:ticket_id])
       if @room.save
@@ -20,9 +21,7 @@ class RoomsController < ApplicationController
    end
 end
 
-# index
-  #@room = Room.find(params[:room_id])
-  # @messages = @room.messages.includes(:user)
+
 
 # @ticket = Ticket.find(params[:ticket_id])
 # @user = User.find(user_id: current_user.id)
