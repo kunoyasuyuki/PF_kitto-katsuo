@@ -19,9 +19,9 @@
          <%= link_to '退会する', user_path(current_user), class: "withdrawal" , method: :delete%>
        </div>
     <% else %>
-       <div class="grid-6">
-         <%= link_to 'ログイン', new_user_session_path, class: "login-footer" %>
-         <%= link_to '新規登録', new_user_registration_path, class: "sign-up-footer" %>
+       <div class="grid-7">
+         <%= link_to 'ログイン', new_user_session_path, class: "footer-login" %>
+         <%= link_to '新規登録', new_user_registration_path, class: "footer-sign-up" %>
        </div>
     <% end %>  
   </div>

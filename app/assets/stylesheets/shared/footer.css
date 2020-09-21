@@ -1,117 +1,108 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-.footer{
-background-color: #E58888;
- width: 100vw;
- padding: 2vh 15vw;
- display: flex;
- flex-direction: column;
+.footer {
+  background-color: #e58888;
+  width: 100vw;
+  padding: 2vh 15vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-contents{
- display:flex;
- justify-content: space-between;
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-left{
+.footer-left {
   text-align: left;
   font: normal bold 40px/20px Proxima Nova;
   letter-spacing: 0.5px;
-  color: #1C2126;
+  color: #1c2126;
   opacity: 1;
   margin-top: 60px;
 }
 
-.fish{
+.fish {
   width: 20vh;
-  background: #E58888 ;
+  background: #e58888;
   margin-left: 35px;
   margin-top: 60px;
-
 }
 
-
-.footer-center{
-font: bold 30px/30px Proxima Nova;
-text-align:center;
-display: flex;
-justify-content: space-around;
-flex-direction: column;
+.footer-center {
+  font: bold 30px/30px Proxima Nova;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-
-.footer-list1{
-
+.footer-list1 {
   font-size: 30px;
-  margin-top:60px;
+  margin-top: 60px;
   margin-bottom: 60px;
   color: #000000;
   text-decoration: none;
-
 }
 
-.footer-list2{
+.footer-list2 {
   font-size: 30px;
-  margin-top:60px;
+  margin-top: 60px;
   margin-bottom: 60px;
   color: #000000;
   text-decoration: none;
-
 }
 
-
-
-.user_nav_grid-6{
+.user_nav_grid-6 {
   display: flex;
   flex-flow: column;
 }
 
-.grid-6{
+.grid-6 {
   display: flex;
 }
 
-.info-change{
+.info-change {
   font-size: 30px;
-  margin-top:60px;
+  margin-top: 60px;
   margin-bottom: 60px;
   color: #000000;
   text-decoration: none;
 }
 
-.withdrawal{
+.withdrawal {
   font-size: 30px;
-  margin-top:60px;
+  margin-top: 60px;
   color: #000000;
   text-decoration: none;
-  
 }
 
-
-.footer-right{
+.footer-right {
   font: bold 30px/30px Proxima Nova;
-  text-align:center;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  margin-right:100px;
-  }
-  
-
-.login-footer{
- position: absolute;
- bottom: -2355px;
- margin:0px;
- font: bold 30px Proxima Nova;
- color: #1C2126;
- text-decoration: none;
+  margin-right: 100px;
 }
 
-.sign-up-footer{
- font: bold 30px Proxima Nova;
- margin:0px;
- color: #1C2126;
- text-decoration: none;
- margin-top:220px;
+.grid-7 {
+  display: flex;
+  flex-direction: column;
+}
 
+.footer-login {
+  margin-top: 65px;
+  font: bold 30px Proxima Nova;
+  color: #1c2126;
+  text-decoration: none;
+}
+
+.footer-sign-up {
+  font: bold 30px Proxima Nova;
+  margin: 0px;
+  color: #1c2126;
+  text-decoration: none;
+  margin-top: 115px;
 }

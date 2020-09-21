@@ -1,41 +1,39 @@
 a {
   text-decoration: none;
   color: lightcoral;
-  font: bold  25px Proxima Nova;
-  margin-right:10px;
+  font: bold 25px Proxima Nova;
+  margin-right: 10px;
 }
 
 .main {
   background: #f8f8f8;
 }
 
-.meigen{
-width: 100%;
+.meigen {
+  width: 100%;
 }
 
-.message
-{
+.message {
   text-align: center;
   font: bold 35px/80px Tsukushi A Round Gothic;
   color: #707070;
   opacity: 1;
 }
 
-.good-points
-{
-  display:flex;
+.good-points {
+  display: flex;
   justify-content: space-around;
 }
 
-.good-point-left{
+.good-point-left {
   margin-top: 7vw;
   text-align: center;
-  font:bold 30px/25px Tsukushi A Round Gothic;
+  font: bold 30px/25px Tsukushi A Round Gothic;
   letter-spacing: 10px;
   color: indianred;
 }
 
-.good-point-left1{
+.good-point-left1 {
   margin-top: 5vw;
   text-align: center;
   font: bold 25px/35px Tsukushi A Round Gothic;
@@ -43,16 +41,15 @@ width: 100%;
   letter-spacing: 2px;
 }
 
-
-.good-point-right{
+.good-point-right {
   margin-top: 7vw;
   text-align: center;
-  font:bold 30px/25px Tsukushi A Round Gothic;
+  font: bold 30px/25px Tsukushi A Round Gothic;
   letter-spacing: 10px;
   color: indianred;
 }
 
-.good-point-right1{
+.good-point-right1 {
   margin-top: 5vw;
   text-align: center;
   font: bold 25px/35px Tsukushi A Round Gothic;
@@ -61,37 +58,34 @@ width: 100%;
 }
 
 .item-contents {
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh 0;
 }
 
-
-.item-subtitle{
-  
+.item-subtitle {
   font: bold 40px/35px Tsukushi A Round Gothic;
-  color:dodgerblue;;
+  color: dodgerblue;
   margin-top: 5vw;
 }
 
-
 .item-contents {
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh 0;
 }
 
-.item-contents>.title {
+.item-contents > .title {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
 }
 
-.item-contents>.subtitle {
+.item-contents > .subtitle {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
@@ -105,6 +99,7 @@ width: 100%;
   justify-content: center;
   margin-bottom: 250px;
   width: 95vw;
+  margin-left: 40px;
 }
 
 .card {
@@ -112,7 +107,7 @@ width: 100%;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  margin:30px;
+  margin: 30px;
 }
 .card-img {
   border-radius: 5px 5px 0 0;
@@ -140,7 +135,7 @@ width: 100%;
 }
 .card-link a {
   text-decoration: none;
-  color:red;
+  color: red;
   margin: 0 10px;
 }
 .card-link a:hover {
