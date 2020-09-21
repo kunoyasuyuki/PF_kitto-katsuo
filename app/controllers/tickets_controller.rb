@@ -32,8 +32,21 @@ class TicketsController < ApplicationController
   end
 
   def show
-    @comments = Comment.all 
+    @comments = Comment.all
     @comment = Comment.new
+    @ticket = Ticket.find(params[:id])
+    @user = User.find(@ticket.user_id)
+    @currentRoomUser = RoomUser.where(user_id: current_user.id)
+    @RoomUserEntry = RoomUser.where(user_id: @user.id)
+    @currentRoomUser.each do |cu|
+        @RoomUserEntry.each do |u|
+            if cu.room_id == u.room_id 
+                # @room.ticket.id = @ticket.room_id 
+                @isRoom = true
+                @roomId = cu.room_id
+            end
+        end
+    end
   end
 
   def edit
