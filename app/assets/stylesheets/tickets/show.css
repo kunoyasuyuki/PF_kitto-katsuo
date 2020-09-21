@@ -94,6 +94,15 @@
 }
 
 
+.item-red-btn2 {
+  text-align: center;
+  background-color:#00adff;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 2vh 10vw;
+}
 .item-red-btn {
   text-align: center;
   background-color: #ea352d;
@@ -116,8 +125,6 @@
   margin: 20px 0px;
   padding: 2vh 10vw;
 }
-
-
 
 
 
@@ -221,8 +228,8 @@
 
 .comment-btn {
   line-height: 48px;
-  background-color: #3CCACE;
-  border: 1px solid #3CCACE;
+  background-color: #00adff;
+  border: 1px solid #00adff;
   color: #fff;
   width: 50%;
   min-width: 150px;
