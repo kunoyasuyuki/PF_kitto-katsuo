@@ -9,7 +9,6 @@
     <div class='item-img-content'>
       <%= image_tag @ticket.image ,class:"item-box-img" %>
      
-     
     </div>
     <%# ログインしていて、なおかつ、ログインしているユーザと出品しているユーザが同一人物でないとき表示しましょう。 %>
    
@@ -35,9 +34,9 @@
       <p class='or-text'>or</p>
       <%= link_to '削除', ticket_path(@ticket.id) , method: :delete, class:'item-destroy' %>
      <%elsif%>
-      <%= link_to 'チャット画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%>
+      <%= link_to 'チャット画面を新規作成',  ticket_rooms_path(@ticket) ,method: :post, class:"item-red-btn2"%>
+      <%= link_to '購入画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%> 
     <%end%>
-
 
 
   <div class="comment-box">

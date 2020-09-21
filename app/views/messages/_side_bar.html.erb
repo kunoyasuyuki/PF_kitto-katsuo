@@ -1,0 +1,19 @@
+<div class="side-bar-header">
+  <div class="header-name">
+    <a href="#"><%= current_user.nickname%></a>
+  </div>
+  <div class="create-room">
+ 
+  </div>
+</div>
+
+
+<div class="rooms">  
+   <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+   
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -15,23 +15,13 @@
 
 ### Association
 - has_many :tickets 
-- has_many :entries
-- has_many :orders
+- has_many :room_users
+- has_many :rooms, through: room_users
 - has_many :messages
-- has_one  :credit
+- has_many :orders
 
-## CREDIT テーブル
-| Column              | Type    | Options     |
-| --------------------| ------  | ----------- |
-| card-number         | string  | null: false |
-| expiration-date     | integer | null: false ,unique: true |
-| security-code       | integer | null: false |
-| user                | references | null: false , foreign_key: true|
 
-### Association
-- belongs_to :ticket
-
-## TIKETS テーブル
+## TICKETS テーブル
 | Column                     | Type   | Options     |
 | ---------------------------| ------ | ----------- |
 | name                       | string | null: false |
@@ -40,57 +30,57 @@
 | user                       | references | null: false , foreign_key: true|
 | category_id                | references | null: false , foreign_key: true|
 
+
 ### Association
 - belongs_to :user
-- has_many :entries
+- has_many :room_users
+- has_many :rooms, through: room_users
+- has_many :messages
 - has_many :orders
-- has_one:category
+
 
 ## Orders テーブル
 | ---------------------------| -----------| -------------------------------|
 | price                      | integer    | null: false                    |
 | user   　 　                | references | null: false ,foreign_key: true |
-| tiket   　　                | references | null: false ,foreign_key: true |
+| ticket   　　               | references | null: false ,foreign_key: true |
 
 ### Association
-- belongs_to :tiket
+- belongs_to :ticket
 - belongs_to :user
 
 
-## CATEGORY テーブル
-| ---------------------------| ------  | ----------- |
-| name                       | string  | null: false |
-
-### Association
-- belongs_to :tiket
-
-### Entriesテーブル
+### Room_usersテーブル
 | ---------------------------| ------     | ------------------------------ |
 | user   　 　                | references | null: false ,foreign_key: true |
-| tiket   　　                | references | null: false ,foreign_key: true |
+| ticket   　　               | references | null: false ,foreign_key: true |
 | room    　　                | references | null: false ,foreign_key: true |
 
-### Associatios
-- belongs_to :tiket
+### Association
+- belongs_to :room
+- belongs_to :ticket
 - belongs_to :user
-- has_one    :rooms
+
 
 ### Roomsテーブル
 | ---------------------------| -----------| ------------------------------- |
-| user   　 　                | references | null: false ,foreign_key: true |
-| tiket   　　                | references | null: false ,foreign_key: true |
+| name                       |     string | null: false                     |
+
 
 ### Association
-- belongs_to  :message
-- has_one     :entries
+- has_many :room_users
+- has_many :users, through: room_users
+- has_many :tickets, through: room_users
+- has_many :messages
 
 
 ### Messagesテーブル
 | ---------------------------| -----------| ------------------------------- |
-| message   　 　             | text       | null: false                     |
+| content   　 　             | string     | null: false                     |
 | user   　 　                | references | null: false ,foreign_key: true  |
 | room    　　                | references | null: false ,foreign_key: true  |
 
 ### Association
 - belongs_to  :room
 - belongs_to  :user
+- belongs_to  :tickets

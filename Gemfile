@@ -75,3 +75,12 @@ gem 'gon'
 
 #検索機能ransackの導入
 gem 'ransack'
+
+#挙動確認
+gem 'pry-rails'
+
+group :production do
+  gem 'rails_12factor'
+end
+
+gem 'redis-rails'
