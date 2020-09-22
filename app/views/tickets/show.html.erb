@@ -40,38 +40,38 @@
       <%= link_to '購入画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%> 
     <%end%>
 
-
+<%# 
   <div class="comment-box">
      <%= form_with model: @comment ,url: ticket_comments_path(@ticket),local: true do |f| %>
-       <%= f.text_field :text ,{class: "comment-text"} %>
-        <p class="comment-warn">相手のことを考え丁寧なコメントを心がけましょう。</p>
+       <%# <%= f.text_field :text ,{class: "comment-text"} %>
+        <%# <p class="comment-warn">相手のことを考え丁寧なコメントを心がけましょう。</p>
         <button type="submit" class="comment-btn">
             <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-            <span> 
-              コメントする
+            <%# <span>  %>
+              <%# コメントする
               <% f.submit  %> 
-            <span>
-        </button>
-     <%end%>
-  </div>
-  
-   <div id='messages'>
+            <%# <span> %>
+        <%# </button> %>
+     <%# <%end%>
+  <%# </div> %>
+   
+   <%# <div id='messages'>
       <% @comments.reverse_each do |comment| %>
-     <div class="message-card">
+     <%# <div class="message-card">
         <div class="upper-message">
           <div class="message-user">
-           <p><%= comment.user.nickname %></p>
-          </div>
-         <div class="message-date">
+           <p><%= comment.user.nickname</p>
+          <%# </div> %>
+         <%# <div class="message-date">
            <%= l comment.created_at %>
-         </div>
-       </div>
-       <div class="lower-message">
+         <%# </div>
+       </div> %>
+       <%# <div class="lower-message">
          <div class="message-content">
-          <p><%= comment.text %></p>  
-         </div>
-       </div>
+          <p><%= comment.text</p>   
+         <%# </div> %>
+       <%# </div>
      </div>
-     <% end %>
-    </div>
+     <% end %> 
+    <%# </div> %> 
 </div>

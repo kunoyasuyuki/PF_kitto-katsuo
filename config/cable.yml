@@ -1,13 +1,8 @@
-default: &default
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: try_ac_simple_broadcast_production
-
 development:
-  <<: *default
+  adapter: async
 
 test:
   adapter: test
 
 production:
-  <<: *default
+  adapter: redis

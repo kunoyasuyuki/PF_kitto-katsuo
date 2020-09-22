@@ -15,14 +15,12 @@ class RoomsController < ApplicationController
         @RoomUserEntry = RoomUser.where(user_id: @user.id)
         @currentRoomUser.each do |cu|
          @RoomUserEntry.each do |u|
-   
            if cu.room_id == u.room_id 
                     # @room.ticket.id = @ticket.room_id 
                     @isRoom = true
             end
           end
         end
-    　　　
         unless @isRoom
             @room = Room.new(name: params[:name], ticket_id: params[:ticket_id])
          if @room.save

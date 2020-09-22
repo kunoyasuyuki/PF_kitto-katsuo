@@ -10,7 +10,7 @@
 }
 
 .item-box {
-  background-color: #FFF;
+  background-color: #fff;
   width: 70vw;
   min-width: 1200px;
   padding: 10vh 15vw;
@@ -19,50 +19,42 @@
   align-items: center;
 }
 
-.box18{
+.box18 {
   position: relative;
   margin: 2em 0px;
   padding: 1em 4em;
   border-width: 2px;
   border-style: solid;
-  border-color:#d6d40d;
+  border-color: #d6d40d;
   border-image: initial;
   border-radius: 3px 0px;
 }
-.box18:before,.box18:after
-{
-  content: '';
+.box18:before,
+.box18:after {
+  content: "";
   position: absolute;
-  width:10px;
+  width: 10px;
   height: 10px;
   border: solid 2px #ffcb8a;
   border-radius: 50%;
 }
 .box18:after {
-  top:-12px;
-  left:-12px;
+  top: -12px;
+  left: -12px;
 }
 .box18:before {
-  bottom:-12px;
-  right:-12px;
+  bottom: -12px;
+  right: -12px;
 }
 .box18 p {
-
-  margin: 0; 
+  margin: 0;
   padding: 0;
   text-align: center;
-  font:bold 40px/25px Tsukushi A Round Gothic;
+  font: bold 40px/50px Tsukushi A Round Gothic;
   letter-spacing: 10px;
 }
 
-
-
-
-
-
-
-
-.item-box>.name {
+.item-box > .name {
   text-align: center;
   font-weight: bold;
   font-size: 40px;
@@ -84,22 +76,21 @@
   flex-direction: column;
 }
 
-.item-price-box>.item-price {
+.item-price-box > .item-price {
   font-size: 4vh;
   font-weight: bold;
 }
 
-.item-price-box>.item-postage {
+.item-price-box > .item-postage {
   font-size: 16px;
 }
 
-
 .item-red-btn2 {
   text-align: center;
-  background-color:#00adff;
+  background-color: #00adff;
   font-size: 24px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   margin: 20px 0px;
   padding: 2vh 10vw;
 }
@@ -108,7 +99,7 @@
   background-color: #ea352d;
   font-size: 24px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   margin: 20px 0px;
   padding: 2vh 10vw;
 }
@@ -126,12 +117,10 @@
   padding: 2vh 10vw;
 }
 
-
-
 .item-explain-box p {
-  margin: 0; 
+  margin: 0;
   padding: 0;
-  font:bold 40px/25px Tsukushi A Round Gothic;
+  font: bold 25px/30px Tsukushi A Round Gothic;
 }
 
 .item-explain-box {
@@ -140,7 +129,6 @@
   border: double 5px #f3cf03;
   text-align: center;
 }
-
 
 .detail-table {
   margin-bottom: 30px;
@@ -201,7 +189,6 @@
   margin-right: 5px;
 }
 
-
 /* /商品の概要 */
 
 .comment-box {
@@ -247,10 +234,8 @@
   margin: 10px 5px 0 0;
 }
 
-
-
 #messages {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
   overflow: scroll;
@@ -260,7 +245,7 @@
   margin: 10px 0;
 }
 
-.upper-message{
+.upper-message {
   display: flex;
 }
 
@@ -285,26 +270,22 @@
   margin-bottom: 40px;
 }
 
-
-
-
 .links {
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
 }
 
 .change-item-btn {
   font-size: 30px;
   text-decoration: none;
-  color: #3CCACE;
+  color: #3ccace;
 }
 
 .another-item {
   display: block;
   margin: 30px 0px 8px;
-  color: #3CCACE;
+  color: #3ccace;
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
