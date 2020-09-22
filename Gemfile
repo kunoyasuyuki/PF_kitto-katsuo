@@ -84,3 +84,5 @@ group :production do
 end
 
 gem 'redis-rails'
+
+gem "aws-sdk-s3", require: false

@@ -3,7 +3,7 @@
   <%=form_with model: @room, local: true do |f|%>
     <%= f.hidden_field :name, value: Ticket.find(@ticket.id).name %>
     <%= f.hidden_field :ticket_id, value: @ticket.id %>
-    <%= f.submit "部屋を作る" %>
+    <%= f.submit "部屋を作る" %> 
  <% end %>
 </div>
   <%# <%=form_with model: @room, local: true do |f|%> 
