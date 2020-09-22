@@ -32,7 +32,7 @@ class TicketsController < ApplicationController
   end
 
   def show
-    @comments = Comment.all
+    @comments = Comment.where(ticket_id:@ticket.id)
     @comment = Comment.new
     @ticket = Ticket.find(params[:id])
     @user = User.find(@ticket.user_id)

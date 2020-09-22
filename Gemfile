@@ -86,3 +86,17 @@ end
 gem 'redis-rails'
 
 gem "aws-sdk-s3", require: false
+
+gem 'rspec-rails', '~> 4.0.0'
+
+group :development do
+  gem 'rubocop', require: false
+end
+
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
+
+# Rubocopを導入
+group :development do
+  gem 'rubocop', require: false
+end

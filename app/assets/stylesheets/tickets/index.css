@@ -112,14 +112,14 @@ a {
 .card-img {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
-  height: auto;
+  height: 40vh;
 }
 .card-content {
-  padding: 20px;
+  padding: 5px;
 }
 .card-title {
   font: bold 20px Tsukushi A Round Gothic;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
   color: #777;
 }
@@ -127,11 +127,12 @@ a {
   color: #777;
   font-size: 14px;
   line-height: 1.5;
+  height: 3vh;
 }
 .card-link {
   text-align: center;
   border-top: 1px solid #eee;
-  padding: 20px;
+  padding: 5px;
 }
 .card-link a {
   text-decoration: none;
