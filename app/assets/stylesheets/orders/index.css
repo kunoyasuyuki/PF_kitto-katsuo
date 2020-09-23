@@ -6,7 +6,7 @@
 }
 
 .transaction-main {
-  background-color: #FFF;
+  background-color: #fff;
   width: 70vw;
   min-width: 450px;
   padding: 10vh 10vw;
@@ -148,4 +148,5 @@
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
+  margin-bottom: 50px;
 }

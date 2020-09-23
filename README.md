@@ -1,4 +1,38 @@
-# テーブル設計
+### アプリケーション名
+
+「kitto-kasuo」
+
+### アプリケーション概要
+
+「学生と社会人が話せる機会を提供するサービスです。」
+
+### 公開 URL
+
+https://kitto-katsuo.herokuapp.com/
+
+認証情報
+ID: admin
+Pass: 1234
+
+### テスト用アカウント
+
+・「購入者用」　
+メールアドレス: 111@gmail.com
+パスワード: 111
+購入用カード情報
+番号：4242424242424242
+期限：12 月/20 年
+セキュリティコード：111
+
+・「出品者用」
+メールアドレス名: 222@gmail.com
+パスワード: 222
+
+### データベース設計
+
+https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
+
+### テーブル設計
 
 ## Users テーブル
 
@@ -41,10 +75,11 @@
 
 ## Orders テーブル
 
-| ----------| -----------| ------------------------------|
-| price | integer | null: false |
-| user 　 | references | null: false ,foreign_key: true |
-| ticket 　 | references | null: false ,foreign_key: true |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| price  | integer    | null: false                    |
+| user   | references | null: false ,foreign_key: true |
+| ticket | references | null: false ,foreign_key: true |
 
 ### Association
 
@@ -53,10 +88,11 @@
 
 ### Room_users テーブル
 
-| ----- | -----------| ------------------------------ |
-| user | references | null: false ,foreign_key: true |
-| ticket| references | null: false ,foreign_key: true |
-| room | references | null: false ,foreign_key: true |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false ,foreign_key: true |
+| ticket | references | null: false ,foreign_key: true |
+| room   | references | null: false ,foreign_key: true |
 
 ### Association
 
@@ -65,9 +101,10 @@
 
 ### Rooms テーブル
 
-| --------| ---------- |-------------------------------|
-| name | string | |  
-| ticket | references | null: false ,foreign_key: true|
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| name   | string     |                                |
+| ticket | references | null: false ,foreign_key: true |
 
 ### Association
 
@@ -78,10 +115,11 @@
 
 ### Messages テーブル
 
-| ---------| ----------| ------------------------------ |
-| content | string | null: false |
-| user 　 | references | null: false ,foreign_key: true |
-| room 　 | references | null: false ,foreign_key: true |
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| content | string     | null: false                    |
+| user    | references | null: false ,foreign_key: true |
+| room    | references | null: false ,foreign_key: true |
 
 ### Association
 
