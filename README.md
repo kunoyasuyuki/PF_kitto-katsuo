@@ -63,9 +63,10 @@ https://kitto-katsuo.herokuapp.com/
 【詳細ページ(Draw.io)】https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
 
 <br>
-### :book: テーブル設計
 
-## Users テーブル
+### :book:テーブル設計
+
+### Users テーブル
 
 | Column              | Type    | Options                   |
 | ------------------- | ------- | ------------------------- |
@@ -87,7 +88,7 @@ https://kitto-katsuo.herokuapp.com/
 - has_many :messages
 - has_many :orders
 
-## Tickets テーブル
+### Tickets テーブル
 
 | Column       | Type       | Options                         |
 | ------------ | ---------- | ------------------------------- |
@@ -104,7 +105,7 @@ https://kitto-katsuo.herokuapp.com/
 - has_many :comments
 - has_many :orders
 
-## Orders テーブル
+### Orders テーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
