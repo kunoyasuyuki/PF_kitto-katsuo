@@ -14,7 +14,7 @@
 
 ## 🌐 App URL
 
-https://kitto-katsuo.herokuapp.com/
+:link:https://kitto-katsuo.herokuapp.com/
 
 ## :key:Basic 認証番号
 
@@ -41,7 +41,7 @@ https://kitto-katsuo.herokuapp.com/
 <br>
 
 ### :computer: 使用技術(開発環境)
-#### Ruby / Ruby on Rails / Java Script / Html / Css / MySQL / GitHub / Heroku / AWS / Visual Studio Code / Trello / Draw.io /Adobe XD
+#### Ruby / Ruby on Rails / Java Script / Html・Css / MySQL / GitHub / Heroku / AWS / Visual Studio Code / Trello / Draw.io /Adobe XD
 
 <br>
 
