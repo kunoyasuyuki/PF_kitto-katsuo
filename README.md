@@ -22,7 +22,7 @@
 ## 🌐 App URL
 https://kitto-katsuo.herokuapp.com/
 
-■Basic認証番号
+:key:Basic認証番号
 ID: admin
 Pass: 1234
 
