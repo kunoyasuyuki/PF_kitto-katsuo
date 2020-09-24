@@ -22,19 +22,19 @@
 ## 🌐 App URL
 https://kitto-katsuo.herokuapp.com/
 
-:key:Basic認証番号
+## :key:Basic認証番号
 ID: admin
 Pass: 1234
 
-■テスト用アカウント
-・「購入者用」　
+### テスト用アカウント
+## :bust_in_silhouette:「購入者用」　
 メールアドレス: 111@gmail.com
 パスワード: 111
 購入用カード情報 番号：4242424242424242
 　　　　　　　　有効期限：12 月/20 年
         　　　セキュリティコード：111
 
-・「出品者用」
+## :busts_in_silhouette:「出品者用」
 メールアドレス名: 222@gmail.com
 パスワード: 222
 
