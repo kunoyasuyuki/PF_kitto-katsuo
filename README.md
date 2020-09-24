@@ -1,4 +1,4 @@
-## :octocat: アプリケーション名
+## :bookmark: アプリケーション名
 
 ### <h1 align="center">- Kitto 勝男 -</h3>
 
@@ -6,7 +6,7 @@
   <img src="top-image.png" width=60% height=20%>
 </p>
 
-### アプリケーション概要
+### :movie_camera:アプリケーション概要
 
 ### 「高校生と大学生が視野を広げるため、安価に社会人とのお話できる時間を購入できるサービスです。」
 
