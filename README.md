@@ -1,14 +1,14 @@
-### アプリケーション名
+## アプリケーション名
 
-### <h3 align="center">- Kitto 勝男 -</h3>
+### <h1 align="center">- Kitto 勝男 -</h3>
 
 <p align ="center">
-  <img src="katsuo.png" width=40%>
+  <img src="fishman.png" width=20% height=20%>
 </p>
 
 ### アプリケーション概要
 
-### 「高校生と大学生が視野を広げるために、安価に社会人とのお話できる 1 時間を購入できるサービスです。」
+### 「高校生と大学生が視野を広げるため、安価に社会人とのお話できる時間を購入できるサービスです。」
 
 ## 🌐 App URL
 
@@ -16,37 +16,44 @@ https://kitto-katsuo.herokuapp.com/
 
 ## :key:Basic 認証番号
 
-ID: admin
-Pass: 1234
+#### ID: admin
+#### Pass: 1234
 
 ### テスト用アカウント
 
-## :bust_in_silhouette: 「出品者用」
+#### :bust_in_silhouette: 「出品者用」
 
-メールアドレス名: 222@gmail.com
-パスワード: 222
+##### メールアドレス名: 222@gmail.com <br>
+##### パスワード: 222
 
-## :busts_in_silhouette: 「購入者用」　
+#### :busts_in_silhouette: 「購入者用」　
 
-メールアドレス: 111@gmail.com <br>
-パスワード: 111 <br>
-購入用カード情報 番号：4242424242424242 <br>
-　　　　　　　　有効期限：12 月/20 年 <br>
-　　　セキュリティコード：111
+##### メールアドレス: 111@gmail.com <br>
+##### パスワード: 111 <br>
+##### 購入用カード情報 <br>
+##### カード番号：4242424242424242 <br>
+##### 有効期限：12 月/20 年 <br>
+##### セキュリティコード：123
 
 ### :computer: 使用技術(開発環境)
+#### Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / Draw.io /Adobe XD
 
-Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / Draw.io /Adobe XD
+<br>
 
 ### :pencil2: デザイン設計/ワイヤーフレーム
-
 https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
+
+<br>
 
 ### :open_file_folder:データベース設計
 
-![画像名](ER図面.png)
+<p align ="center">
+  <img src="ER図面.png" width=40% height=40%>
+</p>
+
 https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
 
+<br>
 ### テーブル設計
 
 ## Users テーブル
