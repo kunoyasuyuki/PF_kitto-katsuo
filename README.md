@@ -41,10 +41,10 @@ https://kitto-katsuo.herokuapp.com/
 
 <br>
 
-### :pencil2: デザイン設計/ワイヤーフレーム
+### :pencil2: サイト設計 (ワイヤーフレーム)
 
 <p align ="center">
-  <img src="ワイヤーフレーム2.png" width=40% height=40%>
+  <img src="ワイヤーフレーム2.png" width=70% height=20%>
 </p>
 https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
 
