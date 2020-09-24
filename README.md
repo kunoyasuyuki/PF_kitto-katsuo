@@ -17,7 +17,7 @@ https://kitto-katsuo.herokuapp.com/
 ## :key:Basic 認証番号
 
 #### ID: admin
-#### Pass: 1234
+#### Password: 1234
 
 ### テスト用アカウント
 
@@ -30,7 +30,8 @@ https://kitto-katsuo.herokuapp.com/
 
 ##### メールアドレス: 111@gmail.com <br>
 ##### パスワード: 111 <br>
-##### 購入用カード情報 <br>
+
+#### :credit_card: 購入用カード情報 <br>
 ##### カード番号：4242424242424242 <br>
 ##### 有効期限：12 月/20 年 <br>
 ##### セキュリティコード：123
@@ -54,7 +55,7 @@ https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
 https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
 
 <br>
-### テーブル設計
+### :book: テーブル設計
 
 ## Users テーブル
 
