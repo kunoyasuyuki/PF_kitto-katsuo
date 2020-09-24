@@ -50,7 +50,8 @@ https://kitto-katsuo.herokuapp.com/
 <p align ="center">
   <img src="ワイヤーフレーム2.png" width=60% height=30%>
 </p>
-###### 【詳細ページ(Adobe XD)】https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
+
+##### 【詳細ページ(Adobe XD)】https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
 
 <br>
 
