@@ -42,7 +42,7 @@ https://kitto-katsuo.herokuapp.com/
 
 ### :computer: 使用技術(開発環境)
 #### Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / Draw.io /Adobe XD
-;
+
 <br>
 
 ### :pencil2: サイト設計 (ワイヤーフレーム)
