@@ -10,6 +10,8 @@
 
 ### 「高校生と大学生が視野を広げるため、安価に社会人とのお話できる時間を購入できるサービスです。」
 
+<br>
+
 ## 🌐 App URL
 
 https://kitto-katsuo.herokuapp.com/
@@ -36,6 +38,8 @@ https://kitto-katsuo.herokuapp.com/
 ##### 有効期限：12 月/20 年 <br>
 ##### セキュリティコード：123
 
+<br>
+
 ### :computer: 使用技術(開発環境)
 #### Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / Draw.io /Adobe XD
 
@@ -44,19 +48,19 @@ https://kitto-katsuo.herokuapp.com/
 ### :pencil2: サイト設計 (ワイヤーフレーム)
 
 <p align ="center">
-  <img src="ワイヤーフレーム2.png" width=70% height=20%>
+  <img src="ワイヤーフレーム2.png" width=60% height=30%>
 </p>
-https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
+【詳細ページ(Adobe XD)】https://xd.adobe.com/view/d9bd4993-7080-43d1-888f-5979c2d82faa-8cee/
 
 <br>
 
 ### :open_file_folder:データベース設計
 
 <p align ="center">
-  <img src="ER図面.png" width=40% height=40%>
+  <img src="ER図面.png" width=60% height=10%>
 </p>
 
-https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
+【詳細ページ(Draw.io)】https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
 
 <br>
 ### :book: テーブル設計
