@@ -3,7 +3,7 @@
 ### <h1 align="center">- Kitto 勝男 -</h3>
 
 <p align ="center">
-  <img src="fishman.png" width=20% height=20%>
+  <img src="top-image.png" width=20% height=20%>
 </p>
 
 ### アプリケーション概要
