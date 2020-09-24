@@ -19,7 +19,7 @@
 
 「高校生と大学生が視野を広げるために、安価に社会人とのお話できる1時間を購入できるサービスです。」
 
-### 公開URL
+## 🌐 App URL
 https://kitto-katsuo.herokuapp.com/
 
 ■Basic認証番号
