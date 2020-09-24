@@ -64,7 +64,7 @@ https://kitto-katsuo.herokuapp.com/
 
 <br>
 
-### :book:テーブル設計
+## :book:テーブル設計
 
 ### Users テーブル
 
