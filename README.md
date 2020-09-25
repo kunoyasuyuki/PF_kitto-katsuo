@@ -1,6 +1,6 @@
 ## :bookmark: アプリケーション名
 
-## <h1 align="center"> <img src="kitto-katsuo.png" width=60% height=30%></h3>
+## <p align="center"> <img src="Kitto-katsuo.png" width=40% height=10%></p>
 
 <p align ="center">
   <img src="top-image.png" width=60% height=20%>
