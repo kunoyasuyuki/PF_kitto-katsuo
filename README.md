@@ -1,6 +1,6 @@
 ## :bookmark: アプリケーション名
 
-## <h1 align="center">- Kitto 勝男 -</h3>
+## <h1 align="center"> <img src="kitto-katsuo.png" width=60% height=30%></h3>
 
 <p align ="center">
   <img src="top-image.png" width=60% height=20%>
