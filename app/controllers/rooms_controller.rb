@@ -4,8 +4,6 @@ class RoomsController < ApplicationController
    def index
     @rooms = Room.where(user_id: current_user.id)
     ticket_id = Ticket.find(ticket_id)
-    # @room = Room.find(params[:room_id])
-    # @messages = @room.messages.includes(:user)
    end
   
     def create
@@ -15,9 +13,9 @@ class RoomsController < ApplicationController
         @RoomUserEntry = RoomUser.where(user_id: @user.id)
         @currentRoomUser.each do |cu|
          @RoomUserEntry.each do |u|
-           if cu.room_id == u.room_id 
-                    # @room.ticket.id = @ticket.room_id 
-                    @isRoom = true
+            if cu.room_id == u.room_id && 
+               @isRoom = true 
+               @room_id = cu.room_id 
             end
           end
         end
