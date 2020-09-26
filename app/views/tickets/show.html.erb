@@ -33,15 +33,6 @@
       <%= link_to '商品の編集',  edit_ticket_path  , method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to '削除', ticket_path(@ticket.id) , method: :delete, class:'item-destroy' %>
-    <!--
-    <% elsif @isRoom %>
-      <%= link_to '出品者とチャットを開始', "/users/#{@user.id}/rooms/#{@roomId}/messages", class:"item-red-btn2"%>
-      <%= link_to '購入画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%> 
-     <%else%>
-      <%= link_to 'チャット画面を新規作成',  ticket_rooms_path(@ticket) ,method: :post, class:"item-red-btn2"%>
-      <%= link_to '購入画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%> 
-    <%end%>
-    -->
     <%= link_to 'チャットを開始', ticket_rooms_path(@ticket), method: :post, class:"item-red-btn2"%>
     <%= link_to '購入画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%>
 
