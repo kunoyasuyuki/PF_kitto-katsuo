@@ -24,8 +24,6 @@ class OrdersController < ApplicationController
 
     if @order.valid?
       pay_item
-      @order.save
-      redirect_to root_path
     else
       @ticket = Ticket.find(params[:tikcet_id])
       render :index
@@ -37,6 +35,8 @@ class OrdersController < ApplicationController
     order = Order.create(user_id: user_id, ticket_id: ticket_id)
   end
 
+  private
+
   def pay_item
     @order = Order.new(order_params)
     if current_user.student_division_id == 2
@@ -47,15 +47,18 @@ class OrdersController < ApplicationController
       @order.save
     end
     @ticket = Ticket.find(params[:ticket_id])
-    Payjp.api_key = ENV["PAYJP_SECRET_KEY"] # PAY.JPテスト秘密鍵
-    Payjp::Charge.create(
-      amount: @order.price, # 商品の値段
-      card: params[:token], # カードトークン
-      currency: 'jpy' # 通貨の種類(日本円)
-    )
+    begin
+      Payjp.api_key = ENV["PAYJP_SECRET_KEY"] # PAY.JPテスト秘密鍵
+      Payjp::Charge.create(
+        amount: @order.price, # 商品の値段
+        card: params[:token], # カードトークン
+        currency: 'jpy' # 通貨の種類(日本円)
+      )
+      redirect_to root_path
+    rescue => exception
+      render :index
+    end
   end
-
-  private
 
   def order_params
     params.permit(:ticket_id,:price,:token).merge(user_id: current_user.id)
