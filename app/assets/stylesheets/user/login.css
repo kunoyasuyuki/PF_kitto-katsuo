@@ -14,6 +14,19 @@
   cursor: pointer;
 }
 
+.sign-up {
+  position: absolute;
+  left: 600px;
+  top: 600px;
+  width: 15%;
+  text-align: center;
+  background: dodgerblue;
+  border: 1px solid blue;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
 
 .select-box {
   height: 45px;
@@ -21,8 +34,6 @@
   background-color: #fff;
   padding-left: 20px;
 }
-
-
 
 .back-btn {
   width: 50%;
@@ -32,8 +43,8 @@
 
 .back-gray-btn {
   width: 100%;
-  background: #9EA0A3;
-  border: 1px solid #9EA0A3;
+  background: #9ea0a3;
+  border: 1px solid #9ea0a3;
   color: #fff;
   line-height: 48px;
   font-size: 14px;
