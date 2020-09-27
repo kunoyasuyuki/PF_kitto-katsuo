@@ -30,13 +30,15 @@
     </table>
   
    <% if user_signed_in? && @ticket.user_id == current_user.id  %>
+     <%= link_to 'チャットを開始', ticket_rooms_path(@ticket), method: :post, class:"item-red-btn2"%>or</p>
       <%= link_to '商品の編集',  edit_ticket_path  , method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to '削除', ticket_path(@ticket.id) , method: :delete, class:'item-destroy' %>
-    <% end %>
+     
+    <% else %>
     <%= link_to 'チャットを開始', ticket_rooms_path(@ticket), method: :post, class:"item-red-btn2"%>
     <%= link_to '購入画面に進む', ticket_orders_path(@ticket.id) ,method: :get, class:"item-red-btn"%>
-
+   <% end %>
 
 <%# 
   <div class="comment-box">

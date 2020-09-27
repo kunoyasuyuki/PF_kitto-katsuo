@@ -14,18 +14,21 @@
   cursor: pointer;
 }
 
-.sign-up {
-  position: absolute;
-  left: 600px;
-  top: 600px;
-  width: 15%;
+.login-sing-up-sign {
+  width: 20%;
   text-align: center;
+  padding: 17px;
   background: dodgerblue;
-  border: 1px solid blue;
   color: #fff;
-  line-height: 48px;
-  font-size: 14px;
+  line-height: 6px;
+  font-weight: lighter;
+  font-size: 15px;
+  height: 6vh;
+  font-size: px;
   cursor: pointer;
+  position: absolute;
+  left: 580px;
+  right: 100pxx;
 }
 
 .select-box {
