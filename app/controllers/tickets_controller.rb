@@ -1,5 +1,6 @@
 class TicketsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:edit, :destroy, :create, :new, :update]
+  before_action :search_ticket, only: [:index, :search]
   before_action :set_item, only: [:edit, :show, :update, :destroy]
   before_action :search_ticket, only: [:index, :search]
 
@@ -36,6 +37,7 @@ class TicketsController < ApplicationController
     @comment = Comment.new
     @ticket = Ticket.find(params[:id])
     @user = User.find(@ticket.user_id)
+   if user_signed_in?
     @currentRoomUser = RoomUser.where(user_id: current_user.id)
     @RoomUserEntry = RoomUser.where(user_id: @user.id)
     @currentRoomUser.each do |cu|
@@ -46,7 +48,8 @@ class TicketsController < ApplicationController
                 @roomId = cu.room_id
             end
         end
-    end
+     end
+   end
   end
 
   def edit
