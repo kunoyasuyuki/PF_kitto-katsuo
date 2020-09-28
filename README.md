@@ -38,8 +38,8 @@
 ##### :one: チケット毎でのチャット機能の作成。
 
 
-<p align ="center">
-  <img src="チャット画面遷移.gif" width=60% height=50%>
+<p align ="center">  
+![チャット画面遷移](https://user-images.githubusercontent.com/68989986/94393429-e6457a80-0195-11eb-88b1-1067d6c95c71.gif)
 </p>
 　　　
 
