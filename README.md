@@ -31,19 +31,27 @@
 
 ###  :raising_hand:ユーザの課題解決のための実装方針 <br>
 ##### :one:学生に手が届く金額でサービスを提供する。価格はユーザの学生区分に応じて、高校生は1,000円、それ以上の学生は1,500円として<br>価格を自動設定することで、金銭的にも気軽に使ってもらえるようにする。
-##### :two:他のチケットサービスよりも、職業というキーワードに重視したサービス設計をすることで、学生にとって将来を考えるための場を提供する体験できるサービスに近づける。<br>
+##### :two:他のチケットサービスよりも、職業というキーワードに重視したサービス設計をすることで、学生にとって将来を考えるための場を提供する体験できるサービスに近づける。<br> <br>
+
+
+### :high_brightness:　サイトイメージ <br>
+<p align ="center">
+<img src="https://user-images.githubusercontent.com/68989986/94395669-23f8d200-019b-11eb-8ce3-cbb797c8ade7.gif" width=60% height=20%>
+</p> <br>
 
 
 ###  :muscle: 工夫した点 <br>
-##### :one: チケット毎でのチャット機能の作成。
-
-
-<p align ="center">  
-![チャット画面遷移](https://user-images.githubusercontent.com/68989986/94393429-e6457a80-0195-11eb-88b1-1067d6c95c71.gif)
-</p>
+##### :one: DM機能の実装を行いました。<br>ポートフォリオの作成を通して、最も難易度が高い機能でした。きちんと、チケット毎にチャットルームが開き、出品者とチャットが開始されるDM機能を実装いたしました。
 　　　
+   　　　
+<p align ="center">
+<img src="https://user-images.githubusercontent.com/68989986/94394320-0aa25680-0198-11eb-92f1-6fa225018757.gif" width=60% height=20%>
+</p> <br> 
 
-
+##### :two:カテゴリ検索機能を実装し、ユーザが気になるカテゴリに対して素早くたどり着けるよう実装しました。
+<p align ="center">
+<img src="https://user-images.githubusercontent.com/68989986/94396014-f52f2b80-019b-11eb-8ab3-f1119fd1cecc.gif" width=60% height=20%>
+</p> <br>
 
 
 
