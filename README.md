@@ -53,7 +53,10 @@
 <img src="https://user-images.githubusercontent.com/68989986/94396014-f52f2b80-019b-11eb-8ab3-f1119fd1cecc.gif" width=60% height=20%>
 </p> <br>
 
+##### :three:価格調整機能を実装し、出品者によって価格が自動て変更されるように実装しました。
 
+<img src="high-school.png"  width=30% height=20%>
+<img src="college.png"  width=30% height=20%>
 
 <br>
 
