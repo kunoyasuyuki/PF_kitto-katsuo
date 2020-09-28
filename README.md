@@ -55,8 +55,9 @@
 
 ##### :three:価格調整機能を実装し、出品者によって価格が自動て変更されるように実装しました。
 
-<img src="high-school.png"  width=30% height=20%>
-<img src="college.png"  width=30% height=20%>
+<p align ="center">
+<img src="https://user-images.githubusercontent.com/68989986/94397949-8f44a300-019f-11eb-8bd5-8a040f0e1af0.gif" width=60% height=20%>
+</p> <br>
 
 <br>
 
