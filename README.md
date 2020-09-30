@@ -70,14 +70,14 @@
 
 :link:https://kitto-katsuo.herokuapp.com/
 
-## :key:Basic 認証番号
+## :key: Basic 認証番号
 
 #### ID: admin
 #### Password: 1234
 
 ### テスト用アカウント
 
-#### :bust_in_silhouette: 「出品者用」
+#### : bust_in_silhouette: 「出品者用」
 
 ##### メールアドレス名: aaa111@gmail.com <br>
 ##### パスワード: aaa111
@@ -88,9 +88,9 @@
 ##### パスワード: bbb222 <br>
 
 #### :credit_card: 購入用カード情報 <br>
-##### カード番号：4242424242424242 <br>
-##### 有効期限：12 月/20 年 <br>
-##### セキュリティコード：123
+##### カード番号： 4242424242424242 <br>
+##### 有効期限： 12 月/20 年 <br>
+##### セキュリティコード： 123
 
 <br>
 
@@ -109,7 +109,7 @@
 
 <br>
 
-### :open_file_folder:データベース設計
+### :open_file_folder: データベース設計
 
 <p align ="center">
   <img src="ER図面.png" width=60% height=10%>
@@ -119,7 +119,7 @@
 
 <br>
 
-## :book:テーブル設計
+## :book: テーブル設計
 
 ### Users テーブル
 
