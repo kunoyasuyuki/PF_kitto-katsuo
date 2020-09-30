@@ -77,7 +77,7 @@
 
 ### テスト用アカウント
 
-#### : bust_in_silhouette: 「出品者用」
+#### :bust_in_silhouette: 「出品者用」
 
 ##### メールアドレス名: aaa111@gmail.com <br>
 ##### パスワード: aaa111
