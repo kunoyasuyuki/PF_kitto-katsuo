@@ -62,7 +62,7 @@
 ##### :three: 購入価格の自動調整機能を実装し、購入者の学生区分によって価格が自動で調整されるように実装しました。<br>　　(高校生は1,000円、大学生は1,500円で購入価格が一律で決定されます。)
 <p align ="center">
 <img src="https://user-images.githubusercontent.com/68989986/94397949-8f44a300-019f-11eb-8bd5-8a040f0e1af0.gif" width=60% height=20%>
-</p> <br>
+</p> <br> <br>
 
 <br>
 
@@ -117,7 +117,8 @@
 
 ##### 【詳細ページ(Draw.io)】:link: https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
 
-<br>
+<br><br>
+
 
 ## :book: テーブル設計
 
