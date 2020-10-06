@@ -125,6 +125,7 @@
   <img src="ER図面.png" width=60% height=10%>
 </p>
 
+
 ##### 【詳細ページ(Draw.io)】:link: https://drive.google.com/file/d/1nJHTUF4NiHQphii31tVkrSqc6k1B-Uon/view
 
 <br><br>
