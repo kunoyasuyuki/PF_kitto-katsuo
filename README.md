@@ -61,7 +61,9 @@
 
 ### :high_brightness: 制作したサイトイメージ 
 <p align ="center">
+  
 <img src="https://user-images.githubusercontent.com/68989986/94395669-23f8d200-019b-11eb-8ce3-cbb797c8ade7.gif" width=60% height=20%>
+
 </p> 
 
 
