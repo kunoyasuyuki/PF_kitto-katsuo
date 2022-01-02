@@ -102,10 +102,6 @@
 
 <br>
 
-## 🌐 App URL
-
-:link:https://kitto-katsuo.herokuapp.com/
-
 ## :key: Basic 認証番号
 
 #### ID: admin
