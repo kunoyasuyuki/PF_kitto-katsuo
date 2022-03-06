@@ -25,6 +25,10 @@
 
 ### 学生が視野を広げるため、社会人とお話しする時間を安価に購入できるサービスです。
 
+<p>プレゼン資料</p>
+https://docs.google.com/presentation/d/1Js1lCWBcKhKDTs2JfIb4VVk6RQSk_tEBx62t9lU3ISE/edit?usp=sharing
+
+
 <br>
 
 ### :bookmark: 制作背景<br>
